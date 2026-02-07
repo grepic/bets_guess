@@ -1,0 +1,74 @@
+{
+  "team_lal": [
+    {"team_id": "team_lal", "result": "W", "is_home": true, "pace": 100.5, "ortg": 115.2, "drtg": 108.3, "efg_pct": 0.54, "tov_pct": 0.12, "reb_pct": 0.51, "ft_rate": 0.27, "three_pct": 0.37, "rest_days": 1},
+    {"team_id": "team_lal", "result": "L", "is_home": false, "pace": 98.2, "ortg": 107.8, "drtg": 112.5, "efg_pct": 0.49, "tov_pct": 0.14, "reb_pct": 0.48, "ft_rate": 0.24, "three_pct": 0.33, "rest_days": 2},
+    {"team_id": "team_lal", "result": "W", "is_home": true, "pace": 101.3, "ortg": 118.6, "drtg": 105.1, "efg_pct": 0.56, "tov_pct": 0.11, "reb_pct": 0.53, "ft_rate": 0.30, "three_pct": 0.39, "rest_days": 1},
+    {"team_id": "team_lal", "result": "W", "is_home": false, "pace": 99.7, "ortg": 112.4, "drtg": 109.8, "efg_pct": 0.52, "tov_pct": 0.13, "reb_pct": 0.50, "ft_rate": 0.26, "three_pct": 0.35, "rest_days": 3},
+    {"team_id": "team_lal", "result": "L", "is_home": true, "pace": 102.1, "ortg": 105.3, "drtg": 114.7, "efg_pct": 0.47, "tov_pct": 0.16, "reb_pct": 0.46, "ft_rate": 0.22, "three_pct": 0.30, "rest_days": 1},
+    {"team_id": "team_lal", "result": "W", "is_home": false, "pace": 97.8, "ortg": 113.9, "drtg": 110.2, "efg_pct": 0.53, "tov_pct": 0.12, "reb_pct": 0.51, "ft_rate": 0.28, "three_pct": 0.36, "rest_days": 2},
+    {"team_id": "team_lal", "result": "W", "is_home": true, "pace": 100.9, "ortg": 116.1, "drtg": 107.5, "efg_pct": 0.55, "tov_pct": 0.11, "reb_pct": 0.52, "ft_rate": 0.29, "three_pct": 0.38, "rest_days": 1},
+    {"team_id": "team_lal", "result": "L", "is_home": false, "pace": 99.1, "ortg": 104.6, "drtg": 111.3, "efg_pct": 0.48, "tov_pct": 0.15, "reb_pct": 0.47, "ft_rate": 0.23, "three_pct": 0.31, "rest_days": 2},
+    {"team_id": "team_lal", "result": "W", "is_home": true, "pace": 101.7, "ortg": 114.8, "drtg": 106.9, "efg_pct": 0.54, "tov_pct": 0.12, "reb_pct": 0.52, "ft_rate": 0.27, "three_pct": 0.37, "rest_days": 1},
+    {"team_id": "team_lal", "result": "W", "is_home": false, "pace": 98.6, "ortg": 111.5, "drtg": 108.7, "efg_pct": 0.51, "tov_pct": 0.13, "reb_pct": 0.50, "ft_rate": 0.25, "three_pct": 0.34, "rest_days": 3}
+  ],
+  "team_bos": [
+    {"team_id": "team_bos", "result": "W", "is_home": true, "pace": 99.3, "ortg": 119.4, "drtg": 106.2, "efg_pct": 0.58, "tov_pct": 0.11, "reb_pct": 0.50, "ft_rate": 0.22, "three_pct": 0.40, "rest_days": 1},
+    {"team_id": "team_bos", "result": "W", "is_home": false, "pace": 98.1, "ortg": 117.2, "drtg": 108.5, "efg_pct": 0.56, "tov_pct": 0.12, "reb_pct": 0.49, "ft_rate": 0.21, "three_pct": 0.39, "rest_days": 2},
+    {"team_id": "team_bos", "result": "W", "is_home": true, "pace": 100.7, "ortg": 121.3, "drtg": 104.8, "efg_pct": 0.59, "tov_pct": 0.10, "reb_pct": 0.52, "ft_rate": 0.24, "three_pct": 0.42, "rest_days": 1},
+    {"team_id": "team_bos", "result": "L", "is_home": false, "pace": 97.5, "ortg": 108.1, "drtg": 113.6, "efg_pct": 0.50, "tov_pct": 0.14, "reb_pct": 0.47, "ft_rate": 0.20, "three_pct": 0.34, "rest_days": 1},
+    {"team_id": "team_bos", "result": "W", "is_home": true, "pace": 99.8, "ortg": 118.7, "drtg": 105.9, "efg_pct": 0.57, "tov_pct": 0.11, "reb_pct": 0.51, "ft_rate": 0.23, "three_pct": 0.41, "rest_days": 2},
+    {"team_id": "team_bos", "result": "W", "is_home": false, "pace": 98.9, "ortg": 116.5, "drtg": 107.3, "efg_pct": 0.55, "tov_pct": 0.12, "reb_pct": 0.50, "ft_rate": 0.22, "three_pct": 0.38, "rest_days": 3},
+    {"team_id": "team_bos", "result": "L", "is_home": true, "pace": 100.2, "ortg": 109.8, "drtg": 112.1, "efg_pct": 0.51, "tov_pct": 0.13, "reb_pct": 0.48, "ft_rate": 0.21, "three_pct": 0.35, "rest_days": 1},
+    {"team_id": "team_bos", "result": "W", "is_home": false, "pace": 97.8, "ortg": 115.9, "drtg": 109.4, "efg_pct": 0.54, "tov_pct": 0.12, "reb_pct": 0.49, "ft_rate": 0.22, "three_pct": 0.38, "rest_days": 2},
+    {"team_id": "team_bos", "result": "W", "is_home": true, "pace": 99.6, "ortg": 120.1, "drtg": 105.3, "efg_pct": 0.58, "tov_pct": 0.10, "reb_pct": 0.52, "ft_rate": 0.23, "three_pct": 0.41, "rest_days": 1},
+    {"team_id": "team_bos", "result": "W", "is_home": false, "pace": 98.4, "ortg": 117.8, "drtg": 107.1, "efg_pct": 0.56, "tov_pct": 0.11, "reb_pct": 0.50, "ft_rate": 0.22, "three_pct": 0.39, "rest_days": 2}
+  ],
+  "team_gsw": [
+    {"team_id": "team_gsw", "result": "W", "is_home": true, "pace": 101.8, "ortg": 116.3, "drtg": 109.7, "efg_pct": 0.55, "tov_pct": 0.13, "reb_pct": 0.49, "ft_rate": 0.21, "three_pct": 0.39, "rest_days": 1},
+    {"team_id": "team_gsw", "result": "L", "is_home": false, "pace": 100.2, "ortg": 108.5, "drtg": 114.2, "efg_pct": 0.49, "tov_pct": 0.15, "reb_pct": 0.46, "ft_rate": 0.19, "three_pct": 0.33, "rest_days": 2},
+    {"team_id": "team_gsw", "result": "W", "is_home": true, "pace": 102.5, "ortg": 118.9, "drtg": 108.1, "efg_pct": 0.57, "tov_pct": 0.12, "reb_pct": 0.50, "ft_rate": 0.22, "three_pct": 0.41, "rest_days": 1},
+    {"team_id": "team_gsw", "result": "L", "is_home": false, "pace": 99.4, "ortg": 106.7, "drtg": 112.8, "efg_pct": 0.48, "tov_pct": 0.14, "reb_pct": 0.47, "ft_rate": 0.20, "three_pct": 0.32, "rest_days": 1},
+    {"team_id": "team_gsw", "result": "W", "is_home": true, "pace": 103.1, "ortg": 117.5, "drtg": 110.3, "efg_pct": 0.56, "tov_pct": 0.12, "reb_pct": 0.51, "ft_rate": 0.23, "three_pct": 0.40, "rest_days": 2},
+    {"team_id": "team_gsw", "result": "L", "is_home": false, "pace": 100.8, "ortg": 109.2, "drtg": 113.5, "efg_pct": 0.50, "tov_pct": 0.14, "reb_pct": 0.47, "ft_rate": 0.20, "three_pct": 0.34, "rest_days": 3},
+    {"team_id": "team_gsw", "result": "W", "is_home": true, "pace": 101.5, "ortg": 115.8, "drtg": 109.1, "efg_pct": 0.54, "tov_pct": 0.13, "reb_pct": 0.49, "ft_rate": 0.21, "three_pct": 0.38, "rest_days": 1},
+    {"team_id": "team_gsw", "result": "L", "is_home": false, "pace": 99.7, "ortg": 107.3, "drtg": 115.6, "efg_pct": 0.47, "tov_pct": 0.16, "reb_pct": 0.45, "ft_rate": 0.18, "three_pct": 0.31, "rest_days": 2},
+    {"team_id": "team_gsw", "result": "W", "is_home": true, "pace": 102.9, "ortg": 119.4, "drtg": 107.6, "efg_pct": 0.58, "tov_pct": 0.11, "reb_pct": 0.51, "ft_rate": 0.24, "three_pct": 0.42, "rest_days": 1},
+    {"team_id": "team_gsw", "result": "W", "is_home": true, "pace": 101.1, "ortg": 114.6, "drtg": 110.8, "efg_pct": 0.53, "tov_pct": 0.13, "reb_pct": 0.49, "ft_rate": 0.21, "three_pct": 0.37, "rest_days": 2}
+  ],
+  "team_den": [
+    {"team_id": "team_den", "result": "W", "is_home": true, "pace": 97.2, "ortg": 118.5, "drtg": 107.9, "efg_pct": 0.56, "tov_pct": 0.11, "reb_pct": 0.53, "ft_rate": 0.26, "three_pct": 0.37, "rest_days": 1},
+    {"team_id": "team_den", "result": "W", "is_home": false, "pace": 96.8, "ortg": 116.2, "drtg": 109.3, "efg_pct": 0.55, "tov_pct": 0.12, "reb_pct": 0.52, "ft_rate": 0.25, "three_pct": 0.36, "rest_days": 2},
+    {"team_id": "team_den", "result": "L", "is_home": false, "pace": 98.4, "ortg": 108.7, "drtg": 114.1, "efg_pct": 0.49, "tov_pct": 0.14, "reb_pct": 0.48, "ft_rate": 0.22, "three_pct": 0.32, "rest_days": 1},
+    {"team_id": "team_den", "result": "W", "is_home": true, "pace": 96.5, "ortg": 120.3, "drtg": 106.5, "efg_pct": 0.58, "tov_pct": 0.10, "reb_pct": 0.54, "ft_rate": 0.28, "three_pct": 0.39, "rest_days": 2},
+    {"team_id": "team_den", "result": "W", "is_home": true, "pace": 97.9, "ortg": 117.8, "drtg": 108.2, "efg_pct": 0.56, "tov_pct": 0.11, "reb_pct": 0.53, "ft_rate": 0.27, "three_pct": 0.38, "rest_days": 1},
+    {"team_id": "team_den", "result": "L", "is_home": false, "pace": 99.1, "ortg": 106.4, "drtg": 113.7, "efg_pct": 0.48, "tov_pct": 0.15, "reb_pct": 0.47, "ft_rate": 0.21, "three_pct": 0.30, "rest_days": 3},
+    {"team_id": "team_den", "result": "W", "is_home": true, "pace": 96.3, "ortg": 119.1, "drtg": 107.4, "efg_pct": 0.57, "tov_pct": 0.11, "reb_pct": 0.54, "ft_rate": 0.26, "three_pct": 0.38, "rest_days": 1},
+    {"team_id": "team_den", "result": "W", "is_home": false, "pace": 97.5, "ortg": 115.6, "drtg": 110.8, "efg_pct": 0.54, "tov_pct": 0.12, "reb_pct": 0.51, "ft_rate": 0.24, "three_pct": 0.35, "rest_days": 2},
+    {"team_id": "team_den", "result": "L", "is_home": false, "pace": 98.8, "ortg": 109.3, "drtg": 112.5, "efg_pct": 0.50, "tov_pct": 0.13, "reb_pct": 0.49, "ft_rate": 0.23, "three_pct": 0.33, "rest_days": 1},
+    {"team_id": "team_den", "result": "W", "is_home": true, "pace": 96.7, "ortg": 117.9, "drtg": 108.1, "efg_pct": 0.56, "tov_pct": 0.11, "reb_pct": 0.53, "ft_rate": 0.27, "three_pct": 0.37, "rest_days": 2}
+  ],
+  "team_mil": [
+    {"team_id": "team_mil", "result": "W", "is_home": true, "pace": 101.4, "ortg": 117.6, "drtg": 110.2, "efg_pct": 0.55, "tov_pct": 0.12, "reb_pct": 0.52, "ft_rate": 0.30, "three_pct": 0.36, "rest_days": 1},
+    {"team_id": "team_mil", "result": "W", "is_home": false, "pace": 100.3, "ortg": 115.4, "drtg": 111.7, "efg_pct": 0.53, "tov_pct": 0.13, "reb_pct": 0.51, "ft_rate": 0.29, "three_pct": 0.35, "rest_days": 2},
+    {"team_id": "team_mil", "result": "L", "is_home": true, "pace": 102.8, "ortg": 108.9, "drtg": 116.3, "efg_pct": 0.49, "tov_pct": 0.15, "reb_pct": 0.48, "ft_rate": 0.25, "three_pct": 0.31, "rest_days": 1},
+    {"team_id": "team_mil", "result": "W", "is_home": false, "pace": 99.6, "ortg": 116.8, "drtg": 109.5, "efg_pct": 0.54, "tov_pct": 0.12, "reb_pct": 0.52, "ft_rate": 0.31, "three_pct": 0.37, "rest_days": 3},
+    {"team_id": "team_mil", "result": "W", "is_home": true, "pace": 101.9, "ortg": 119.2, "drtg": 108.7, "efg_pct": 0.56, "tov_pct": 0.11, "reb_pct": 0.53, "ft_rate": 0.32, "three_pct": 0.38, "rest_days": 1},
+    {"team_id": "team_mil", "result": "L", "is_home": false, "pace": 100.7, "ortg": 107.5, "drtg": 114.8, "efg_pct": 0.48, "tov_pct": 0.16, "reb_pct": 0.47, "ft_rate": 0.24, "three_pct": 0.30, "rest_days": 2},
+    {"team_id": "team_mil", "result": "W", "is_home": true, "pace": 101.2, "ortg": 118.3, "drtg": 109.1, "efg_pct": 0.56, "tov_pct": 0.12, "reb_pct": 0.53, "ft_rate": 0.30, "three_pct": 0.37, "rest_days": 1},
+    {"team_id": "team_mil", "result": "L", "is_home": false, "pace": 99.8, "ortg": 109.6, "drtg": 113.2, "efg_pct": 0.50, "tov_pct": 0.14, "reb_pct": 0.49, "ft_rate": 0.26, "three_pct": 0.32, "rest_days": 1},
+    {"team_id": "team_mil", "result": "W", "is_home": true, "pace": 102.3, "ortg": 120.5, "drtg": 107.8, "efg_pct": 0.57, "tov_pct": 0.11, "reb_pct": 0.54, "ft_rate": 0.33, "three_pct": 0.39, "rest_days": 2},
+    {"team_id": "team_mil", "result": "W", "is_home": true, "pace": 101.5, "ortg": 116.9, "drtg": 110.4, "efg_pct": 0.54, "tov_pct": 0.12, "reb_pct": 0.52, "ft_rate": 0.29, "three_pct": 0.36, "rest_days": 1}
+  ],
+  "team_phi": [
+    {"team_id": "team_phi", "result": "L", "is_home": true, "pace": 98.7, "ortg": 110.3, "drtg": 113.9, "efg_pct": 0.50, "tov_pct": 0.14, "reb_pct": 0.49, "ft_rate": 0.28, "three_pct": 0.33, "rest_days": 1},
+    {"team_id": "team_phi", "result": "W", "is_home": false, "pace": 97.5, "ortg": 114.7, "drtg": 110.2, "efg_pct": 0.53, "tov_pct": 0.13, "reb_pct": 0.51, "ft_rate": 0.30, "three_pct": 0.35, "rest_days": 2},
+    {"team_id": "team_phi", "result": "L", "is_home": true, "pace": 99.2, "ortg": 106.8, "drtg": 115.4, "efg_pct": 0.47, "tov_pct": 0.16, "reb_pct": 0.47, "ft_rate": 0.25, "three_pct": 0.30, "rest_days": 1},
+    {"team_id": "team_phi", "result": "W", "is_home": true, "pace": 98.4, "ortg": 116.5, "drtg": 109.8, "efg_pct": 0.54, "tov_pct": 0.12, "reb_pct": 0.52, "ft_rate": 0.31, "three_pct": 0.36, "rest_days": 3},
+    {"team_id": "team_phi", "result": "L", "is_home": false, "pace": 100.1, "ortg": 108.2, "drtg": 114.6, "efg_pct": 0.48, "tov_pct": 0.15, "reb_pct": 0.46, "ft_rate": 0.26, "three_pct": 0.31, "rest_days": 1},
+    {"team_id": "team_phi", "result": "W", "is_home": true, "pace": 97.9, "ortg": 115.3, "drtg": 111.1, "efg_pct": 0.53, "tov_pct": 0.13, "reb_pct": 0.51, "ft_rate": 0.29, "three_pct": 0.35, "rest_days": 2},
+    {"team_id": "team_phi", "result": "L", "is_home": false, "pace": 99.5, "ortg": 107.1, "drtg": 116.2, "efg_pct": 0.46, "tov_pct": 0.17, "reb_pct": 0.45, "ft_rate": 0.24, "three_pct": 0.29, "rest_days": 1},
+    {"team_id": "team_phi", "result": "W", "is_home": true, "pace": 98.1, "ortg": 113.8, "drtg": 110.5, "efg_pct": 0.52, "tov_pct": 0.13, "reb_pct": 0.50, "ft_rate": 0.30, "three_pct": 0.34, "rest_days": 2},
+    {"team_id": "team_phi", "result": "L", "is_home": false, "pace": 100.3, "ortg": 109.5, "drtg": 113.1, "efg_pct": 0.49, "tov_pct": 0.14, "reb_pct": 0.48, "ft_rate": 0.27, "three_pct": 0.32, "rest_days": 1},
+    {"team_id": "team_phi", "result": "L", "is_home": true, "pace": 98.6, "ortg": 111.2, "drtg": 114.3, "efg_pct": 0.50, "tov_pct": 0.15, "reb_pct": 0.49, "ft_rate": 0.28, "three_pct": 0.33, "rest_days": 3}
+  ]
+}

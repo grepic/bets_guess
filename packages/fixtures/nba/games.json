@@ -1,0 +1,56 @@
+[
+  {
+    "game_id": "nba_20260207_001",
+    "sport": "nba",
+    "league": "nba",
+    "home_team": {
+      "team_id": "team_lal",
+      "name": "Los Angeles Lakers",
+      "short_name": "LAL"
+    },
+    "away_team": {
+      "team_id": "team_bos",
+      "name": "Boston Celtics",
+      "short_name": "BOS"
+    },
+    "start_time": "2026-02-07T19:30:00",
+    "venue": "Crypto.com Arena",
+    "status": "scheduled"
+  },
+  {
+    "game_id": "nba_20260207_002",
+    "sport": "nba",
+    "league": "nba",
+    "home_team": {
+      "team_id": "team_gsw",
+      "name": "Golden State Warriors",
+      "short_name": "GSW"
+    },
+    "away_team": {
+      "team_id": "team_den",
+      "name": "Denver Nuggets",
+      "short_name": "DEN"
+    },
+    "start_time": "2026-02-07T22:00:00",
+    "venue": "Chase Center",
+    "status": "scheduled"
+  },
+  {
+    "game_id": "nba_20260207_003",
+    "sport": "nba",
+    "league": "nba",
+    "home_team": {
+      "team_id": "team_mil",
+      "name": "Milwaukee Bucks",
+      "short_name": "MIL"
+    },
+    "away_team": {
+      "team_id": "team_phi",
+      "name": "Philadelphia 76ers",
+      "short_name": "PHI"
+    },
+    "start_time": "2026-02-07T20:00:00",
+    "venue": "Fiserv Forum",
+    "status": "scheduled"
+  }
+]

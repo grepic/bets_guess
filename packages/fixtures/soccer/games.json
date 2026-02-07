@@ -1,0 +1,71 @@
+[
+  {
+    "game_id": "soc_epl_20260207_001",
+    "sport": "soccer",
+    "league": "epl",
+    "season": "2025-26",
+    "matchday": 24,
+    "home_team": {
+      "team_id": "team_ars",
+      "name": "Arsenal",
+      "short_name": "ARS"
+    },
+    "away_team": {
+      "team_id": "team_mci",
+      "name": "Manchester City",
+      "short_name": "MCI"
+    },
+    "start_time": "2026-02-07T12:30:00Z",
+    "venue": "Emirates Stadium",
+    "city": "London",
+    "status": "scheduled",
+    "broadcast": "Sky Sports",
+    "referee": "Michael Oliver"
+  },
+  {
+    "game_id": "soc_epl_20260207_002",
+    "sport": "soccer",
+    "league": "epl",
+    "season": "2025-26",
+    "matchday": 24,
+    "home_team": {
+      "team_id": "team_liv",
+      "name": "Liverpool",
+      "short_name": "LIV"
+    },
+    "away_team": {
+      "team_id": "team_che",
+      "name": "Chelsea",
+      "short_name": "CHE"
+    },
+    "start_time": "2026-02-07T15:00:00Z",
+    "venue": "Anfield",
+    "city": "Liverpool",
+    "status": "scheduled",
+    "broadcast": "TNT Sports",
+    "referee": "Anthony Taylor"
+  },
+  {
+    "game_id": "soc_epl_20260207_003",
+    "sport": "soccer",
+    "league": "epl",
+    "season": "2025-26",
+    "matchday": 24,
+    "home_team": {
+      "team_id": "team_mun",
+      "name": "Manchester United",
+      "short_name": "MUN"
+    },
+    "away_team": {
+      "team_id": "team_tot",
+      "name": "Tottenham Hotspur",
+      "short_name": "TOT"
+    },
+    "start_time": "2026-02-07T17:30:00Z",
+    "venue": "Old Trafford",
+    "city": "Manchester",
+    "status": "scheduled",
+    "broadcast": "Sky Sports",
+    "referee": "Simon Hooper"
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "player_id": "p_matthews",
+    "team_id": "team_tor",
+    "name": "Auston Matthews",
+    "position": "C",
+    "jersey_number": 34,
+    "is_active": true
+  },
+  {
+    "player_id": "p_marner",
+    "team_id": "team_tor",
+    "name": "Mitch Marner",
+    "position": "RW",
+    "jersey_number": 16,
+    "is_active": true
+  },
+  {
+    "player_id": "p_nylander",
+    "team_id": "team_tor",
+    "name": "William Nylander",
+    "position": "RW",
+    "jersey_number": 88,
+    "is_active": true
+  },
+  {
+    "player_id": "p_woll",
+    "team_id": "team_tor",
+    "name": "Joseph Woll",
+    "position": "G",
+    "jersey_number": 60,
+    "is_active": true
+  },
+  {
+    "player_id": "p_pastrnak",
+    "team_id": "team_bru",
+    "name": "David Pastrnak",
+    "position": "RW",
+    "jersey_number": 88,
+    "is_active": true
+  },
+  {
+    "player_id": "p_marchand",
+    "team_id": "team_bru",
+    "name": "Brad Marchand",
+    "position": "LW",
+    "jersey_number": 63,
+    "is_active": true
+  },
+  {
+    "player_id": "p_zacha",
+    "team_id": "team_bru",
+    "name": "Pavel Zacha",
+    "position": "C",
+    "jersey_number": 18,
+    "is_active": true
+  },
+  {
+    "player_id": "p_swayman",
+    "team_id": "team_bru",
+    "name": "Jeremy Swayman",
+    "position": "G",
+    "jersey_number": 1,
+    "is_active": true
+  },
+  {
+    "player_id": "p_mcdavid",
+    "team_id": "team_edm",
+    "name": "Connor McDavid",
+    "position": "C",
+    "jersey_number": 97,
+    "is_active": true
+  },
+  {
+    "player_id": "p_draisaitl",
+    "team_id": "team_edm",
+    "name": "Leon Draisaitl",
+    "position": "C",
+    "jersey_number": 29,
+    "is_active": true
+  },
+  {
+    "player_id": "p_hyman",
+    "team_id": "team_edm",
+    "name": "Zach Hyman",
+    "position": "LW",
+    "jersey_number": 18,
+    "is_active": true
+  },
+  {
+    "player_id": "p_skinner_edm",
+    "team_id": "team_edm",
+    "name": "Stuart Skinner",
+    "position": "G",
+    "jersey_number": 74,
+    "is_active": true
+  },
+  {
+    "player_id": "p_mackinnon",
+    "team_id": "team_col",
+    "name": "Nathan MacKinnon",
+    "position": "C",
+    "jersey_number": 29,
+    "is_active": true
+  },
+  {
+    "player_id": "p_makar",
+    "team_id": "team_col",
+    "name": "Cale Makar",
+    "position": "D",
+    "jersey_number": 8,
+    "is_active": true
+  },
+  {
+    "player_id": "p_rantanen",
+    "team_id": "team_col",
+    "name": "Mikko Rantanen",
+    "position": "RW",
+    "jersey_number": 96,
+    "is_active": true
+  },
+  {
+    "player_id": "p_georgiev",
+    "team_id": "team_col",
+    "name": "Alexandar Georgiev",
+    "position": "G",
+    "jersey_number": 40,
+    "is_active": true
+  },
+  {
+    "player_id": "p_panarin",
+    "team_id": "team_nyr",
+    "name": "Artemi Panarin",
+    "position": "LW",
+    "jersey_number": 10,
+    "is_active": true
+  },
+  {
+    "player_id": "p_zibanejad",
+    "team_id": "team_nyr",
+    "name": "Mika Zibanejad",
+    "position": "C",
+    "jersey_number": 93,
+    "is_active": true
+  },
+  {
+    "player_id": "p_fox",
+    "team_id": "team_nyr",
+    "name": "Adam Fox",
+    "position": "D",
+    "jersey_number": 23,
+    "is_active": true
+  },
+  {
+    "player_id": "p_shesterkin",
+    "team_id": "team_nyr",
+    "name": "Igor Shesterkin",
+    "position": "G",
+    "jersey_number": 31,
+    "is_active": true
+  },
+  {
+    "player_id": "p_aho",
+    "team_id": "team_car",
+    "name": "Sebastian Aho",
+    "position": "C",
+    "jersey_number": 20,
+    "is_active": true
+  },
+  {
+    "player_id": "p_svechnikov",
+    "team_id": "team_car",
+    "name": "Andrei Svechnikov",
+    "position": "RW",
+    "jersey_number": 37,
+    "is_active": true
+  },
+  {
+    "player_id": "p_jarvis",
+    "team_id": "team_car",
+    "name": "Seth Jarvis",
+    "position": "C",
+    "jersey_number": 24,
+    "is_active": true
+  },
+  {
+    "player_id": "p_andersen",
+    "team_id": "team_car",
+    "name": "Frederik Andersen",
+    "position": "G",
+    "jersey_number": 31,
+    "is_active": true
+  }
+]

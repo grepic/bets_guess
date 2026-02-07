@@ -1,0 +1,232 @@
+[
+  {
+    "player_id": "p_saka",
+    "name": "Bukayo Saka",
+    "team_id": "team_ars",
+    "position": "RW",
+    "number": 7,
+    "nationality": "England",
+    "age": 24,
+    "foot": "left"
+  },
+  {
+    "player_id": "p_havertz",
+    "name": "Kai Havertz",
+    "team_id": "team_ars",
+    "position": "CF",
+    "number": 29,
+    "nationality": "Germany",
+    "age": 26,
+    "foot": "left"
+  },
+  {
+    "player_id": "p_rice",
+    "name": "Declan Rice",
+    "team_id": "team_ars",
+    "position": "CM",
+    "number": 41,
+    "nationality": "England",
+    "age": 27,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_odegaard",
+    "name": "Martin Odegaard",
+    "team_id": "team_ars",
+    "position": "CAM",
+    "number": 8,
+    "nationality": "Norway",
+    "age": 27,
+    "foot": "left"
+  },
+  {
+    "player_id": "p_haaland",
+    "name": "Erling Haaland",
+    "team_id": "team_mci",
+    "position": "CF",
+    "number": 9,
+    "nationality": "Norway",
+    "age": 25,
+    "foot": "left"
+  },
+  {
+    "player_id": "p_foden",
+    "name": "Phil Foden",
+    "team_id": "team_mci",
+    "position": "LW",
+    "number": 47,
+    "nationality": "England",
+    "age": 25,
+    "foot": "left"
+  },
+  {
+    "player_id": "p_debruyne",
+    "name": "Kevin De Bruyne",
+    "team_id": "team_mci",
+    "position": "CAM",
+    "number": 17,
+    "nationality": "Belgium",
+    "age": 34,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_rodri",
+    "name": "Rodri",
+    "team_id": "team_mci",
+    "position": "CDM",
+    "number": 16,
+    "nationality": "Spain",
+    "age": 29,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_salah",
+    "name": "Mohamed Salah",
+    "team_id": "team_liv",
+    "position": "RW",
+    "number": 11,
+    "nationality": "Egypt",
+    "age": 33,
+    "foot": "left"
+  },
+  {
+    "player_id": "p_nunez",
+    "name": "Darwin Nunez",
+    "team_id": "team_liv",
+    "position": "CF",
+    "number": 9,
+    "nationality": "Uruguay",
+    "age": 26,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_szoboszlai",
+    "name": "Dominik Szoboszlai",
+    "team_id": "team_liv",
+    "position": "CAM",
+    "number": 8,
+    "nationality": "Hungary",
+    "age": 25,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_diaz",
+    "name": "Luis Diaz",
+    "team_id": "team_liv",
+    "position": "LW",
+    "number": 7,
+    "nationality": "Colombia",
+    "age": 29,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_palmer",
+    "name": "Cole Palmer",
+    "team_id": "team_che",
+    "position": "CAM",
+    "number": 20,
+    "nationality": "England",
+    "age": 23,
+    "foot": "left"
+  },
+  {
+    "player_id": "p_jackson",
+    "name": "Nicolas Jackson",
+    "team_id": "team_che",
+    "position": "CF",
+    "number": 15,
+    "nationality": "Senegal",
+    "age": 24,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_neto",
+    "name": "Pedro Neto",
+    "team_id": "team_che",
+    "position": "RW",
+    "number": 7,
+    "nationality": "Portugal",
+    "age": 24,
+    "foot": "left"
+  },
+  {
+    "player_id": "p_fernandes",
+    "name": "Bruno Fernandes",
+    "team_id": "team_mun",
+    "position": "CAM",
+    "number": 8,
+    "nationality": "Portugal",
+    "age": 31,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_rashford",
+    "name": "Marcus Rashford",
+    "team_id": "team_mun",
+    "position": "LW",
+    "number": 10,
+    "nationality": "England",
+    "age": 28,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_hojlund",
+    "name": "Rasmus Hojlund",
+    "team_id": "team_mun",
+    "position": "CF",
+    "number": 11,
+    "nationality": "Denmark",
+    "age": 23,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_mainoo",
+    "name": "Kobbie Mainoo",
+    "team_id": "team_mun",
+    "position": "CM",
+    "number": 37,
+    "nationality": "England",
+    "age": 20,
+    "foot": "left"
+  },
+  {
+    "player_id": "p_son",
+    "name": "Son Heung-min",
+    "team_id": "team_tot",
+    "position": "LW",
+    "number": 7,
+    "nationality": "South Korea",
+    "age": 33,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_maddison",
+    "name": "James Maddison",
+    "team_id": "team_tot",
+    "position": "CAM",
+    "number": 10,
+    "nationality": "England",
+    "age": 29,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_solanke",
+    "name": "Dominic Solanke",
+    "team_id": "team_tot",
+    "position": "CF",
+    "number": 19,
+    "nationality": "England",
+    "age": 28,
+    "foot": "right"
+  },
+  {
+    "player_id": "p_kulusevski",
+    "name": "Dejan Kulusevski",
+    "team_id": "team_tot",
+    "position": "RW",
+    "number": 21,
+    "nationality": "Sweden",
+    "age": 25,
+    "foot": "left"
+  }
+]

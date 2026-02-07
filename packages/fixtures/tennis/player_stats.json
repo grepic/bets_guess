@@ -1,0 +1,42 @@
+{
+  "p_sinner": [
+    {"player_id": "p_sinner", "result": "W", "is_home": true, "hold_pct": 0.91, "break_pct": 0.35, "aces": 11, "double_faults": 2, "first_serve_pct": 0.68},
+    {"player_id": "p_sinner", "result": "W", "is_home": false, "hold_pct": 0.88, "break_pct": 0.30, "aces": 9, "double_faults": 3, "first_serve_pct": 0.65},
+    {"player_id": "p_sinner", "result": "W", "is_home": true, "hold_pct": 0.92, "break_pct": 0.33, "aces": 12, "double_faults": 1, "first_serve_pct": 0.71},
+    {"player_id": "p_sinner", "result": "L", "is_home": false, "hold_pct": 0.82, "break_pct": 0.18, "aces": 7, "double_faults": 4, "first_serve_pct": 0.62},
+    {"player_id": "p_sinner", "result": "W", "is_home": true, "hold_pct": 0.90, "break_pct": 0.31, "aces": 10, "double_faults": 2, "first_serve_pct": 0.69},
+    {"player_id": "p_sinner", "result": "W", "is_home": false, "hold_pct": 0.87, "break_pct": 0.28, "aces": 8, "double_faults": 3, "first_serve_pct": 0.66},
+    {"player_id": "p_sinner", "result": "W", "is_home": true, "hold_pct": 0.89, "break_pct": 0.34, "aces": 10, "double_faults": 2, "first_serve_pct": 0.70},
+    {"player_id": "p_sinner", "result": "L", "is_home": false, "hold_pct": 0.85, "break_pct": 0.22, "aces": 6, "double_faults": 3, "first_serve_pct": 0.63}
+  ],
+  "p_alcaraz": [
+    {"player_id": "p_alcaraz", "result": "W", "is_home": true, "hold_pct": 0.88, "break_pct": 0.37, "aces": 7, "double_faults": 3, "first_serve_pct": 0.66},
+    {"player_id": "p_alcaraz", "result": "W", "is_home": false, "hold_pct": 0.86, "break_pct": 0.34, "aces": 6, "double_faults": 4, "first_serve_pct": 0.64},
+    {"player_id": "p_alcaraz", "result": "L", "is_home": true, "hold_pct": 0.83, "break_pct": 0.25, "aces": 5, "double_faults": 5, "first_serve_pct": 0.61},
+    {"player_id": "p_alcaraz", "result": "W", "is_home": false, "hold_pct": 0.90, "break_pct": 0.38, "aces": 9, "double_faults": 2, "first_serve_pct": 0.69},
+    {"player_id": "p_alcaraz", "result": "W", "is_home": true, "hold_pct": 0.87, "break_pct": 0.36, "aces": 8, "double_faults": 3, "first_serve_pct": 0.67},
+    {"player_id": "p_alcaraz", "result": "W", "is_home": false, "hold_pct": 0.85, "break_pct": 0.32, "aces": 6, "double_faults": 4, "first_serve_pct": 0.65},
+    {"player_id": "p_alcaraz", "result": "L", "is_home": true, "hold_pct": 0.81, "break_pct": 0.20, "aces": 4, "double_faults": 5, "first_serve_pct": 0.60},
+    {"player_id": "p_alcaraz", "result": "W", "is_home": false, "hold_pct": 0.89, "break_pct": 0.35, "aces": 7, "double_faults": 3, "first_serve_pct": 0.68}
+  ],
+  "p_djokovic": [
+    {"player_id": "p_djokovic", "result": "W", "is_home": true, "hold_pct": 0.86, "break_pct": 0.31, "aces": 5, "double_faults": 1, "first_serve_pct": 0.70},
+    {"player_id": "p_djokovic", "result": "W", "is_home": false, "hold_pct": 0.85, "break_pct": 0.30, "aces": 4, "double_faults": 2, "first_serve_pct": 0.68},
+    {"player_id": "p_djokovic", "result": "L", "is_home": true, "hold_pct": 0.83, "break_pct": 0.24, "aces": 3, "double_faults": 2, "first_serve_pct": 0.66},
+    {"player_id": "p_djokovic", "result": "W", "is_home": false, "hold_pct": 0.87, "break_pct": 0.33, "aces": 6, "double_faults": 1, "first_serve_pct": 0.71},
+    {"player_id": "p_djokovic", "result": "W", "is_home": true, "hold_pct": 0.86, "break_pct": 0.29, "aces": 5, "double_faults": 2, "first_serve_pct": 0.69},
+    {"player_id": "p_djokovic", "result": "L", "is_home": false, "hold_pct": 0.82, "break_pct": 0.22, "aces": 3, "double_faults": 3, "first_serve_pct": 0.65},
+    {"player_id": "p_djokovic", "result": "W", "is_home": true, "hold_pct": 0.88, "break_pct": 0.32, "aces": 7, "double_faults": 1, "first_serve_pct": 0.72},
+    {"player_id": "p_djokovic", "result": "L", "is_home": false, "hold_pct": 0.84, "break_pct": 0.26, "aces": 4, "double_faults": 2, "first_serve_pct": 0.67}
+  ],
+  "p_medvedev": [
+    {"player_id": "p_medvedev", "result": "W", "is_home": true, "hold_pct": 0.84, "break_pct": 0.24, "aces": 5, "double_faults": 3, "first_serve_pct": 0.65},
+    {"player_id": "p_medvedev", "result": "L", "is_home": false, "hold_pct": 0.80, "break_pct": 0.18, "aces": 3, "double_faults": 4, "first_serve_pct": 0.61},
+    {"player_id": "p_medvedev", "result": "W", "is_home": true, "hold_pct": 0.86, "break_pct": 0.26, "aces": 6, "double_faults": 2, "first_serve_pct": 0.67},
+    {"player_id": "p_medvedev", "result": "W", "is_home": false, "hold_pct": 0.83, "break_pct": 0.23, "aces": 4, "double_faults": 3, "first_serve_pct": 0.63},
+    {"player_id": "p_medvedev", "result": "L", "is_home": true, "hold_pct": 0.81, "break_pct": 0.19, "aces": 3, "double_faults": 5, "first_serve_pct": 0.60},
+    {"player_id": "p_medvedev", "result": "W", "is_home": false, "hold_pct": 0.85, "break_pct": 0.27, "aces": 5, "double_faults": 3, "first_serve_pct": 0.66},
+    {"player_id": "p_medvedev", "result": "W", "is_home": true, "hold_pct": 0.87, "break_pct": 0.28, "aces": 8, "double_faults": 2, "first_serve_pct": 0.68},
+    {"player_id": "p_medvedev", "result": "L", "is_home": false, "hold_pct": 0.79, "break_pct": 0.16, "aces": 3, "double_faults": 4, "first_serve_pct": 0.59}
+  ]
+}

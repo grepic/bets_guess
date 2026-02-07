@@ -1,0 +1,32 @@
+[
+  {
+    "team_id": "team_tor",
+    "name": "Toronto Maple Leafs",
+    "short_name": "TOR"
+  },
+  {
+    "team_id": "team_bru",
+    "name": "Boston Bruins",
+    "short_name": "BOS"
+  },
+  {
+    "team_id": "team_edm",
+    "name": "Edmonton Oilers",
+    "short_name": "EDM"
+  },
+  {
+    "team_id": "team_col",
+    "name": "Colorado Avalanche",
+    "short_name": "COL"
+  },
+  {
+    "team_id": "team_nyr",
+    "name": "New York Rangers",
+    "short_name": "NYR"
+  },
+  {
+    "team_id": "team_car",
+    "name": "Carolina Hurricanes",
+    "short_name": "CAR"
+  }
+]

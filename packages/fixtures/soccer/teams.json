@@ -1,0 +1,80 @@
+[
+  {
+    "team_id": "team_ars",
+    "name": "Arsenal",
+    "short_name": "ARS",
+    "league": "epl",
+    "founded": 1886,
+    "venue": "Emirates Stadium",
+    "capacity": 60704,
+    "city": "London",
+    "manager": "Mikel Arteta",
+    "primary_color": "#EF0107",
+    "secondary_color": "#FFFFFF"
+  },
+  {
+    "team_id": "team_mci",
+    "name": "Manchester City",
+    "short_name": "MCI",
+    "league": "epl",
+    "founded": 1880,
+    "venue": "Etihad Stadium",
+    "capacity": 53400,
+    "city": "Manchester",
+    "manager": "Pep Guardiola",
+    "primary_color": "#6CABDD",
+    "secondary_color": "#FFFFFF"
+  },
+  {
+    "team_id": "team_liv",
+    "name": "Liverpool",
+    "short_name": "LIV",
+    "league": "epl",
+    "founded": 1892,
+    "venue": "Anfield",
+    "capacity": 61276,
+    "city": "Liverpool",
+    "manager": "Arne Slot",
+    "primary_color": "#C8102E",
+    "secondary_color": "#FFFFFF"
+  },
+  {
+    "team_id": "team_che",
+    "name": "Chelsea",
+    "short_name": "CHE",
+    "league": "epl",
+    "founded": 1905,
+    "venue": "Stamford Bridge",
+    "capacity": 40341,
+    "city": "London",
+    "manager": "Enzo Maresca",
+    "primary_color": "#034694",
+    "secondary_color": "#FFFFFF"
+  },
+  {
+    "team_id": "team_mun",
+    "name": "Manchester United",
+    "short_name": "MUN",
+    "league": "epl",
+    "founded": 1878,
+    "venue": "Old Trafford",
+    "capacity": 74310,
+    "city": "Manchester",
+    "manager": "Ruben Amorim",
+    "primary_color": "#DA291C",
+    "secondary_color": "#FFFFFF"
+  },
+  {
+    "team_id": "team_tot",
+    "name": "Tottenham Hotspur",
+    "short_name": "TOT",
+    "league": "epl",
+    "founded": 1882,
+    "venue": "Tottenham Hotspur Stadium",
+    "capacity": 62850,
+    "city": "London",
+    "manager": "Ange Postecoglou",
+    "primary_color": "#132257",
+    "secondary_color": "#FFFFFF"
+  }
+]

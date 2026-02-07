@@ -1,0 +1,22 @@
+[
+  {
+    "team_id": "p_sinner",
+    "name": "Jannik Sinner",
+    "short_name": "SIN"
+  },
+  {
+    "team_id": "p_alcaraz",
+    "name": "Carlos Alcaraz",
+    "short_name": "ALC"
+  },
+  {
+    "team_id": "p_djokovic",
+    "name": "Novak Djokovic",
+    "short_name": "DJO"
+  },
+  {
+    "team_id": "p_medvedev",
+    "name": "Daniil Medvedev",
+    "short_name": "MED"
+  }
+]

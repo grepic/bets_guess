@@ -1,0 +1,101 @@
+[
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_moneyline:ft:total", "outcome_label": "Home", "price": 1.85, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_moneyline:ft:total", "outcome_label": "Away", "price": 2.00, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_puck_line:ft:spread:-1.5", "outcome_label": "Home -1.5", "price": 2.75, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_puck_line:ft:spread:-1.5", "outcome_label": "Away +1.5", "price": 1.45, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:5.5", "outcome_label": "Over 5.5", "price": 1.90, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:5.5", "outcome_label": "Under 5.5", "price": 1.90, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:6.5", "outcome_label": "Over 6.5", "price": 2.30, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:6.5", "outcome_label": "Under 6.5", "price": 1.62, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:home:2.5", "outcome_label": "TOR Over 2.5", "price": 1.75, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:home:2.5", "outcome_label": "TOR Under 2.5", "price": 2.05, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:away:2.5", "outcome_label": "BOS Over 2.5", "price": 1.83, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:away:2.5", "outcome_label": "BOS Under 2.5", "price": 1.97, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_3way:rt:total", "outcome_label": "Home", "price": 2.20, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_3way:rt:total", "outcome_label": "Draw", "price": 4.20, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_3way:rt:total", "outcome_label": "Away", "price": 2.40, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_matthews:over:3.5", "outcome_label": "Auston Matthews Over 3.5 SOG", "price": 1.80, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_matthews:under:3.5", "outcome_label": "Auston Matthews Under 3.5 SOG", "price": 2.00, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_pastrnak:over:3.5", "outcome_label": "David Pastrnak Over 3.5 SOG", "price": 1.75, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_pastrnak:under:3.5", "outcome_label": "David Pastrnak Under 3.5 SOG", "price": 2.05, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_marner:over:2.5", "outcome_label": "Mitch Marner Over 2.5 SOG", "price": 1.85, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_marner:under:2.5", "outcome_label": "Mitch Marner Under 2.5 SOG", "price": 1.95, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_matthews", "outcome_label": "Auston Matthews Anytime Scorer", "price": 2.10, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_marner", "outcome_label": "Mitch Marner Anytime Scorer", "price": 3.00, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_pastrnak", "outcome_label": "David Pastrnak Anytime Scorer", "price": 2.20, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_001", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_marchand", "outcome_label": "Brad Marchand Anytime Scorer", "price": 2.75, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_moneyline:ft:total", "outcome_label": "Home", "price": 1.72, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_moneyline:ft:total", "outcome_label": "Away", "price": 2.15, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_puck_line:ft:spread:-1.5", "outcome_label": "Home -1.5", "price": 2.55, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_puck_line:ft:spread:-1.5", "outcome_label": "Away +1.5", "price": 1.52, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:5.5", "outcome_label": "Over 5.5", "price": 1.75, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:5.5", "outcome_label": "Under 5.5", "price": 2.05, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:6.5", "outcome_label": "Over 6.5", "price": 2.15, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:6.5", "outcome_label": "Under 6.5", "price": 1.72, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:home:3.5", "outcome_label": "EDM Over 3.5", "price": 2.10, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:home:3.5", "outcome_label": "EDM Under 3.5", "price": 1.75, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:away:2.5", "outcome_label": "COL Over 2.5", "price": 1.80, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:away:2.5", "outcome_label": "COL Under 2.5", "price": 2.00, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_3way:rt:total", "outcome_label": "Home", "price": 2.05, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_3way:rt:total", "outcome_label": "Draw", "price": 4.00, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_3way:rt:total", "outcome_label": "Away", "price": 2.60, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_mcdavid:over:3.5", "outcome_label": "Connor McDavid Over 3.5 SOG", "price": 1.85, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_mcdavid:under:3.5", "outcome_label": "Connor McDavid Under 3.5 SOG", "price": 1.95, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_draisaitl:over:3.5", "outcome_label": "Leon Draisaitl Over 3.5 SOG", "price": 1.78, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_draisaitl:under:3.5", "outcome_label": "Leon Draisaitl Under 3.5 SOG", "price": 2.02, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_mackinnon:over:3.5", "outcome_label": "Nathan MacKinnon Over 3.5 SOG", "price": 1.82, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_mackinnon:under:3.5", "outcome_label": "Nathan MacKinnon Under 3.5 SOG", "price": 1.98, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_makar:over:2.5", "outcome_label": "Cale Makar Over 2.5 SOG", "price": 1.80, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_makar:under:2.5", "outcome_label": "Cale Makar Under 2.5 SOG", "price": 2.00, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_mcdavid", "outcome_label": "Connor McDavid Anytime Scorer", "price": 1.90, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_draisaitl", "outcome_label": "Leon Draisaitl Anytime Scorer", "price": 1.95, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_mackinnon", "outcome_label": "Nathan MacKinnon Anytime Scorer", "price": 2.10, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_002", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_makar", "outcome_label": "Cale Makar Anytime Scorer", "price": 3.25, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_moneyline:ft:total", "outcome_label": "Home", "price": 1.65, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_moneyline:ft:total", "outcome_label": "Away", "price": 2.25, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_puck_line:ft:spread:-1.5", "outcome_label": "Home -1.5", "price": 2.45, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_puck_line:ft:spread:-1.5", "outcome_label": "Away +1.5", "price": 1.55, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:5.5", "outcome_label": "Over 5.5", "price": 1.95, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:5.5", "outcome_label": "Under 5.5", "price": 1.85, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:6.5", "outcome_label": "Over 6.5", "price": 2.40, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_totals:ft:total:6.5", "outcome_label": "Under 6.5", "price": 1.58, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:home:2.5", "outcome_label": "NYR Over 2.5", "price": 1.70, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:home:2.5", "outcome_label": "NYR Under 2.5", "price": 2.10, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:away:2.5", "outcome_label": "CAR Over 2.5", "price": 1.90, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_team_total:ft:away:2.5", "outcome_label": "CAR Under 2.5", "price": 1.90, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_3way:rt:total", "outcome_label": "Home", "price": 1.95, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_3way:rt:total", "outcome_label": "Draw", "price": 4.10, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_3way:rt:total", "outcome_label": "Away", "price": 2.75, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_panarin:over:3.5", "outcome_label": "Artemi Panarin Over 3.5 SOG", "price": 1.90, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_panarin:under:3.5", "outcome_label": "Artemi Panarin Under 3.5 SOG", "price": 1.90, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_zibanejad:over:2.5", "outcome_label": "Mika Zibanejad Over 2.5 SOG", "price": 1.78, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_zibanejad:under:2.5", "outcome_label": "Mika Zibanejad Under 2.5 SOG", "price": 2.02, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_aho:over:3.5", "outcome_label": "Sebastian Aho Over 3.5 SOG", "price": 1.95, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_aho:under:3.5", "outcome_label": "Sebastian Aho Under 3.5 SOG", "price": 1.85, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_svechnikov:over:2.5", "outcome_label": "Andrei Svechnikov Over 2.5 SOG", "price": 1.82, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_player_sog:p_svechnikov:under:2.5", "outcome_label": "Andrei Svechnikov Under 2.5 SOG", "price": 1.98, "timestamp": "2026-02-07T10:00:00"},
+
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_panarin", "outcome_label": "Artemi Panarin Anytime Scorer", "price": 2.15, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_zibanejad", "outcome_label": "Mika Zibanejad Anytime Scorer", "price": 2.50, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_aho", "outcome_label": "Sebastian Aho Anytime Scorer", "price": 2.25, "timestamp": "2026-02-07T10:00:00"},
+  {"game_id": "nhl_20260207_003", "bookmaker": "mock_book", "market_key": "nhl_anytime_scorer:p_svechnikov", "outcome_label": "Andrei Svechnikov Anytime Scorer", "price": 2.60, "timestamp": "2026-02-07T10:00:00"}
+]

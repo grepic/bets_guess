@@ -1,0 +1,8 @@
+{
+  "team_ars": {"league_avg_goals": 1.35, "attack_rating": 1.45, "defense_rating": 0.72},
+  "team_mci": {"league_avg_goals": 1.35, "attack_rating": 1.55, "defense_rating": 0.68},
+  "team_liv": {"league_avg_goals": 1.35, "attack_rating": 1.50, "defense_rating": 0.75},
+  "team_che": {"league_avg_goals": 1.35, "attack_rating": 1.15, "defense_rating": 0.90},
+  "team_mun": {"league_avg_goals": 1.35, "attack_rating": 1.10, "defense_rating": 1.05},
+  "team_tot": {"league_avg_goals": 1.35, "attack_rating": 1.20, "defense_rating": 0.95}
+}

@@ -1,0 +1,258 @@
+[
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_winner:ft:total",
+    "outcome_label": "Home",
+    "price": 1.65,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_winner:ft:total",
+    "outcome_label": "Away",
+    "price": 2.25,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_set_betting:ft:total",
+    "outcome_label": "2-0",
+    "price": 3.20,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_set_betting:ft:total",
+    "outcome_label": "2-1",
+    "price": 3.00,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_set_betting:ft:total",
+    "outcome_label": "0-2",
+    "price": 5.50,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_set_betting:ft:total",
+    "outcome_label": "1-2",
+    "price": 4.00,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_total_games:ft:total:21.5",
+    "outcome_label": "Over",
+    "price": 1.80,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_total_games:ft:total:21.5",
+    "outcome_label": "Under",
+    "price": 2.00,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_total_games:ft:total:22.5",
+    "outcome_label": "Over",
+    "price": 2.10,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_total_games:ft:total:22.5",
+    "outcome_label": "Under",
+    "price": 1.75,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_tiebreak:ft:total",
+    "outcome_label": "Yes",
+    "price": 2.20,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_tiebreak:ft:total",
+    "outcome_label": "No",
+    "price": 1.65,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_aces:ft:home:7.5",
+    "outcome_label": "Over",
+    "price": 1.85,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_aces:ft:home:7.5",
+    "outcome_label": "Under",
+    "price": 1.95,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_aces:ft:away:5.5",
+    "outcome_label": "Over",
+    "price": 1.90,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_001",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_aces:ft:away:5.5",
+    "outcome_label": "Under",
+    "price": 1.90,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_winner:ft:total",
+    "outcome_label": "Home",
+    "price": 1.55,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_winner:ft:total",
+    "outcome_label": "Away",
+    "price": 2.45,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_set_betting:ft:total",
+    "outcome_label": "2-0",
+    "price": 2.90,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_set_betting:ft:total",
+    "outcome_label": "2-1",
+    "price": 3.20,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_set_betting:ft:total",
+    "outcome_label": "0-2",
+    "price": 6.00,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_set_betting:ft:total",
+    "outcome_label": "1-2",
+    "price": 4.50,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_total_games:ft:total:21.5",
+    "outcome_label": "Over",
+    "price": 1.75,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_total_games:ft:total:21.5",
+    "outcome_label": "Under",
+    "price": 2.05,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_total_games:ft:total:22.5",
+    "outcome_label": "Over",
+    "price": 2.00,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_total_games:ft:total:22.5",
+    "outcome_label": "Under",
+    "price": 1.80,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_tiebreak:ft:total",
+    "outcome_label": "Yes",
+    "price": 2.30,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_tiebreak:ft:total",
+    "outcome_label": "No",
+    "price": 1.60,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_aces:ft:home:5.5",
+    "outcome_label": "Over",
+    "price": 1.85,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_aces:ft:home:5.5",
+    "outcome_label": "Under",
+    "price": 1.95,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_aces:ft:away:4.5",
+    "outcome_label": "Over",
+    "price": 1.80,
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "bookmaker": "mock_book",
+    "market_key": "tennis_aces:ft:away:4.5",
+    "outcome_label": "Under",
+    "price": 2.00,
+    "timestamp": "2026-02-07T10:00:00"
+  }
+]

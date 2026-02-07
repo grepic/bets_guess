@@ -1,0 +1,18 @@
+{
+  "p_sinner": {
+    "elo_overall": 2050,
+    "elo_surface": 2080
+  },
+  "p_alcaraz": {
+    "elo_overall": 2020,
+    "elo_surface": 2000
+  },
+  "p_djokovic": {
+    "elo_overall": 1980,
+    "elo_surface": 2010
+  },
+  "p_medvedev": {
+    "elo_overall": 1950,
+    "elo_surface": 1970
+  }
+}

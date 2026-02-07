@@ -1,0 +1,18 @@
+[project]
+name = "smartbets-pro"
+version = "1.0.0"
+description = "Sports analytics platform - probabilities, fair odds, and value identification"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true

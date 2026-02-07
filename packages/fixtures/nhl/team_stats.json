@@ -1,0 +1,74 @@
+{
+  "team_tor": [
+    {"team_id": "team_tor", "result": "W", "is_home": true, "shots_for": 33, "shots_against": 28, "goals_for": 4, "goals_against": 2, "pp_pct": 0.25, "pk_pct": 0.82, "goalie_save_pct": 0.929, "rest_days": 1},
+    {"team_id": "team_tor", "result": "W", "is_home": false, "shots_for": 30, "shots_against": 31, "goals_for": 3, "goals_against": 2, "pp_pct": 0.33, "pk_pct": 0.80, "goalie_save_pct": 0.935, "rest_days": 2},
+    {"team_id": "team_tor", "result": "L", "is_home": true, "shots_for": 28, "shots_against": 35, "goals_for": 2, "goals_against": 4, "pp_pct": 0.00, "pk_pct": 0.75, "goalie_save_pct": 0.886, "rest_days": 1},
+    {"team_id": "team_tor", "result": "W", "is_home": true, "shots_for": 36, "shots_against": 24, "goals_for": 5, "goals_against": 1, "pp_pct": 0.50, "pk_pct": 1.00, "goalie_save_pct": 0.958, "rest_days": 3},
+    {"team_id": "team_tor", "result": "L", "is_home": false, "shots_for": 25, "shots_against": 30, "goals_for": 1, "goals_against": 3, "pp_pct": 0.00, "pk_pct": 0.67, "goalie_save_pct": 0.900, "rest_days": 1},
+    {"team_id": "team_tor", "result": "W", "is_home": true, "shots_for": 31, "shots_against": 27, "goals_for": 3, "goals_against": 1, "pp_pct": 0.25, "pk_pct": 1.00, "goalie_save_pct": 0.963, "rest_days": 2},
+    {"team_id": "team_tor", "result": "W", "is_home": false, "shots_for": 34, "shots_against": 29, "goals_for": 4, "goals_against": 3, "pp_pct": 0.33, "pk_pct": 0.75, "goalie_save_pct": 0.897, "rest_days": 1},
+    {"team_id": "team_tor", "result": "L", "is_home": true, "shots_for": 27, "shots_against": 33, "goals_for": 2, "goals_against": 3, "pp_pct": 0.00, "pk_pct": 0.80, "goalie_save_pct": 0.909, "rest_days": 2},
+    {"team_id": "team_tor", "result": "W", "is_home": false, "shots_for": 32, "shots_against": 26, "goals_for": 3, "goals_against": 2, "pp_pct": 0.25, "pk_pct": 1.00, "goalie_save_pct": 0.923, "rest_days": 1},
+    {"team_id": "team_tor", "result": "W", "is_home": true, "shots_for": 35, "shots_against": 25, "goals_for": 5, "goals_against": 2, "pp_pct": 0.40, "pk_pct": 0.83, "goalie_save_pct": 0.920, "rest_days": 3}
+  ],
+  "team_bru": [
+    {"team_id": "team_bru", "result": "W", "is_home": true, "shots_for": 32, "shots_against": 26, "goals_for": 3, "goals_against": 1, "pp_pct": 0.25, "pk_pct": 1.00, "goalie_save_pct": 0.962, "rest_days": 2},
+    {"team_id": "team_bru", "result": "L", "is_home": false, "shots_for": 27, "shots_against": 34, "goals_for": 2, "goals_against": 4, "pp_pct": 0.00, "pk_pct": 0.67, "goalie_save_pct": 0.882, "rest_days": 1},
+    {"team_id": "team_bru", "result": "W", "is_home": true, "shots_for": 35, "shots_against": 28, "goals_for": 4, "goals_against": 2, "pp_pct": 0.33, "pk_pct": 0.80, "goalie_save_pct": 0.929, "rest_days": 1},
+    {"team_id": "team_bru", "result": "W", "is_home": false, "shots_for": 29, "shots_against": 30, "goals_for": 3, "goals_against": 2, "pp_pct": 0.50, "pk_pct": 1.00, "goalie_save_pct": 0.933, "rest_days": 2},
+    {"team_id": "team_bru", "result": "L", "is_home": true, "shots_for": 24, "shots_against": 31, "goals_for": 1, "goals_against": 3, "pp_pct": 0.00, "pk_pct": 0.75, "goalie_save_pct": 0.903, "rest_days": 3},
+    {"team_id": "team_bru", "result": "W", "is_home": false, "shots_for": 31, "shots_against": 27, "goals_for": 4, "goals_against": 3, "pp_pct": 0.25, "pk_pct": 0.80, "goalie_save_pct": 0.889, "rest_days": 1},
+    {"team_id": "team_bru", "result": "L", "is_home": true, "shots_for": 26, "shots_against": 32, "goals_for": 2, "goals_against": 4, "pp_pct": 0.00, "pk_pct": 0.60, "goalie_save_pct": 0.875, "rest_days": 2},
+    {"team_id": "team_bru", "result": "W", "is_home": false, "shots_for": 33, "shots_against": 25, "goals_for": 3, "goals_against": 1, "pp_pct": 0.33, "pk_pct": 1.00, "goalie_save_pct": 0.960, "rest_days": 1},
+    {"team_id": "team_bru", "result": "W", "is_home": true, "shots_for": 30, "shots_against": 29, "goals_for": 4, "goals_against": 3, "pp_pct": 0.25, "pk_pct": 0.75, "goalie_save_pct": 0.897, "rest_days": 2},
+    {"team_id": "team_bru", "result": "L", "is_home": false, "shots_for": 28, "shots_against": 33, "goals_for": 2, "goals_against": 3, "pp_pct": 0.00, "pk_pct": 0.80, "goalie_save_pct": 0.909, "rest_days": 1}
+  ],
+  "team_edm": [
+    {"team_id": "team_edm", "result": "W", "is_home": true, "shots_for": 37, "shots_against": 25, "goals_for": 5, "goals_against": 2, "pp_pct": 0.40, "pk_pct": 0.83, "goalie_save_pct": 0.920, "rest_days": 1},
+    {"team_id": "team_edm", "result": "W", "is_home": true, "shots_for": 34, "shots_against": 28, "goals_for": 4, "goals_against": 1, "pp_pct": 0.33, "pk_pct": 1.00, "goalie_save_pct": 0.964, "rest_days": 2},
+    {"team_id": "team_edm", "result": "L", "is_home": false, "shots_for": 26, "shots_against": 32, "goals_for": 2, "goals_against": 4, "pp_pct": 0.00, "pk_pct": 0.67, "goalie_save_pct": 0.875, "rest_days": 1},
+    {"team_id": "team_edm", "result": "W", "is_home": true, "shots_for": 35, "shots_against": 27, "goals_for": 6, "goals_against": 3, "pp_pct": 0.50, "pk_pct": 0.75, "goalie_save_pct": 0.889, "rest_days": 3},
+    {"team_id": "team_edm", "result": "W", "is_home": false, "shots_for": 30, "shots_against": 29, "goals_for": 3, "goals_against": 2, "pp_pct": 0.25, "pk_pct": 1.00, "goalie_save_pct": 0.931, "rest_days": 1},
+    {"team_id": "team_edm", "result": "L", "is_home": true, "shots_for": 28, "shots_against": 34, "goals_for": 2, "goals_against": 5, "pp_pct": 0.00, "pk_pct": 0.60, "goalie_save_pct": 0.853, "rest_days": 2},
+    {"team_id": "team_edm", "result": "W", "is_home": false, "shots_for": 33, "shots_against": 26, "goals_for": 4, "goals_against": 2, "pp_pct": 0.33, "pk_pct": 0.80, "goalie_save_pct": 0.923, "rest_days": 1},
+    {"team_id": "team_edm", "result": "W", "is_home": true, "shots_for": 36, "shots_against": 24, "goals_for": 5, "goals_against": 1, "pp_pct": 0.50, "pk_pct": 1.00, "goalie_save_pct": 0.958, "rest_days": 2},
+    {"team_id": "team_edm", "result": "L", "is_home": false, "shots_for": 25, "shots_against": 31, "goals_for": 1, "goals_against": 3, "pp_pct": 0.00, "pk_pct": 0.75, "goalie_save_pct": 0.903, "rest_days": 1},
+    {"team_id": "team_edm", "result": "W", "is_home": true, "shots_for": 32, "shots_against": 28, "goals_for": 4, "goals_against": 3, "pp_pct": 0.25, "pk_pct": 0.80, "goalie_save_pct": 0.893, "rest_days": 3}
+  ],
+  "team_col": [
+    {"team_id": "team_col", "result": "W", "is_home": true, "shots_for": 38, "shots_against": 24, "goals_for": 5, "goals_against": 1, "pp_pct": 0.50, "pk_pct": 1.00, "goalie_save_pct": 0.958, "rest_days": 2},
+    {"team_id": "team_col", "result": "W", "is_home": false, "shots_for": 33, "shots_against": 29, "goals_for": 4, "goals_against": 3, "pp_pct": 0.25, "pk_pct": 0.80, "goalie_save_pct": 0.897, "rest_days": 1},
+    {"team_id": "team_col", "result": "L", "is_home": true, "shots_for": 29, "shots_against": 33, "goals_for": 2, "goals_against": 4, "pp_pct": 0.00, "pk_pct": 0.67, "goalie_save_pct": 0.879, "rest_days": 1},
+    {"team_id": "team_col", "result": "W", "is_home": false, "shots_for": 31, "shots_against": 27, "goals_for": 3, "goals_against": 1, "pp_pct": 0.33, "pk_pct": 1.00, "goalie_save_pct": 0.963, "rest_days": 3},
+    {"team_id": "team_col", "result": "W", "is_home": true, "shots_for": 35, "shots_against": 26, "goals_for": 4, "goals_against": 2, "pp_pct": 0.25, "pk_pct": 0.83, "goalie_save_pct": 0.923, "rest_days": 1},
+    {"team_id": "team_col", "result": "L", "is_home": false, "shots_for": 24, "shots_against": 32, "goals_for": 1, "goals_against": 3, "pp_pct": 0.00, "pk_pct": 0.75, "goalie_save_pct": 0.906, "rest_days": 2},
+    {"team_id": "team_col", "result": "W", "is_home": true, "shots_for": 36, "shots_against": 25, "goals_for": 5, "goals_against": 2, "pp_pct": 0.40, "pk_pct": 1.00, "goalie_save_pct": 0.920, "rest_days": 1},
+    {"team_id": "team_col", "result": "L", "is_home": false, "shots_for": 27, "shots_against": 34, "goals_for": 2, "goals_against": 5, "pp_pct": 0.00, "pk_pct": 0.60, "goalie_save_pct": 0.853, "rest_days": 2},
+    {"team_id": "team_col", "result": "W", "is_home": true, "shots_for": 34, "shots_against": 27, "goals_for": 4, "goals_against": 2, "pp_pct": 0.33, "pk_pct": 0.80, "goalie_save_pct": 0.926, "rest_days": 1},
+    {"team_id": "team_col", "result": "W", "is_home": false, "shots_for": 30, "shots_against": 28, "goals_for": 3, "goals_against": 2, "pp_pct": 0.25, "pk_pct": 1.00, "goalie_save_pct": 0.929, "rest_days": 3}
+  ],
+  "team_nyr": [
+    {"team_id": "team_nyr", "result": "W", "is_home": true, "shots_for": 31, "shots_against": 26, "goals_for": 3, "goals_against": 1, "pp_pct": 0.25, "pk_pct": 1.00, "goalie_save_pct": 0.962, "rest_days": 1},
+    {"team_id": "team_nyr", "result": "W", "is_home": true, "shots_for": 34, "shots_against": 28, "goals_for": 4, "goals_against": 2, "pp_pct": 0.33, "pk_pct": 0.80, "goalie_save_pct": 0.929, "rest_days": 2},
+    {"team_id": "team_nyr", "result": "L", "is_home": false, "shots_for": 25, "shots_against": 33, "goals_for": 1, "goals_against": 4, "pp_pct": 0.00, "pk_pct": 0.67, "goalie_save_pct": 0.879, "rest_days": 1},
+    {"team_id": "team_nyr", "result": "W", "is_home": true, "shots_for": 33, "shots_against": 24, "goals_for": 4, "goals_against": 1, "pp_pct": 0.50, "pk_pct": 1.00, "goalie_save_pct": 0.958, "rest_days": 3},
+    {"team_id": "team_nyr", "result": "L", "is_home": false, "shots_for": 27, "shots_against": 30, "goals_for": 2, "goals_against": 3, "pp_pct": 0.00, "pk_pct": 0.75, "goalie_save_pct": 0.900, "rest_days": 1},
+    {"team_id": "team_nyr", "result": "W", "is_home": true, "shots_for": 36, "shots_against": 25, "goals_for": 5, "goals_against": 2, "pp_pct": 0.33, "pk_pct": 0.83, "goalie_save_pct": 0.920, "rest_days": 2},
+    {"team_id": "team_nyr", "result": "W", "is_home": false, "shots_for": 30, "shots_against": 27, "goals_for": 3, "goals_against": 2, "pp_pct": 0.25, "pk_pct": 1.00, "goalie_save_pct": 0.926, "rest_days": 1},
+    {"team_id": "team_nyr", "result": "L", "is_home": true, "shots_for": 28, "shots_against": 34, "goals_for": 2, "goals_against": 4, "pp_pct": 0.00, "pk_pct": 0.60, "goalie_save_pct": 0.882, "rest_days": 2},
+    {"team_id": "team_nyr", "result": "W", "is_home": false, "shots_for": 32, "shots_against": 26, "goals_for": 3, "goals_against": 1, "pp_pct": 0.25, "pk_pct": 1.00, "goalie_save_pct": 0.962, "rest_days": 1},
+    {"team_id": "team_nyr", "result": "W", "is_home": true, "shots_for": 35, "shots_against": 27, "goals_for": 4, "goals_against": 2, "pp_pct": 0.33, "pk_pct": 0.80, "goalie_save_pct": 0.926, "rest_days": 3}
+  ],
+  "team_car": [
+    {"team_id": "team_car", "result": "W", "is_home": true, "shots_for": 34, "shots_against": 25, "goals_for": 4, "goals_against": 1, "pp_pct": 0.33, "pk_pct": 1.00, "goalie_save_pct": 0.960, "rest_days": 2},
+    {"team_id": "team_car", "result": "W", "is_home": false, "shots_for": 31, "shots_against": 29, "goals_for": 3, "goals_against": 2, "pp_pct": 0.25, "pk_pct": 0.80, "goalie_save_pct": 0.931, "rest_days": 1},
+    {"team_id": "team_car", "result": "L", "is_home": true, "shots_for": 26, "shots_against": 33, "goals_for": 2, "goals_against": 4, "pp_pct": 0.00, "pk_pct": 0.67, "goalie_save_pct": 0.879, "rest_days": 1},
+    {"team_id": "team_car", "result": "W", "is_home": false, "shots_for": 33, "shots_against": 26, "goals_for": 4, "goals_against": 2, "pp_pct": 0.50, "pk_pct": 0.83, "goalie_save_pct": 0.923, "rest_days": 3},
+    {"team_id": "team_car", "result": "W", "is_home": true, "shots_for": 35, "shots_against": 24, "goals_for": 5, "goals_against": 1, "pp_pct": 0.33, "pk_pct": 1.00, "goalie_save_pct": 0.958, "rest_days": 1},
+    {"team_id": "team_car", "result": "L", "is_home": false, "shots_for": 24, "shots_against": 31, "goals_for": 1, "goals_against": 3, "pp_pct": 0.00, "pk_pct": 0.75, "goalie_save_pct": 0.903, "rest_days": 2},
+    {"team_id": "team_car", "result": "W", "is_home": true, "shots_for": 32, "shots_against": 27, "goals_for": 3, "goals_against": 1, "pp_pct": 0.25, "pk_pct": 1.00, "goalie_save_pct": 0.963, "rest_days": 1},
+    {"team_id": "team_car", "result": "L", "is_home": false, "shots_for": 27, "shots_against": 35, "goals_for": 2, "goals_against": 5, "pp_pct": 0.00, "pk_pct": 0.60, "goalie_save_pct": 0.857, "rest_days": 2},
+    {"team_id": "team_car", "result": "W", "is_home": true, "shots_for": 36, "shots_against": 26, "goals_for": 4, "goals_against": 2, "pp_pct": 0.33, "pk_pct": 0.80, "goalie_save_pct": 0.923, "rest_days": 1},
+    {"team_id": "team_car", "result": "W", "is_home": false, "shots_for": 30, "shots_against": 28, "goals_for": 3, "goals_against": 2, "pp_pct": 0.25, "pk_pct": 1.00, "goalie_save_pct": 0.929, "rest_days": 3}
+  ]
+}

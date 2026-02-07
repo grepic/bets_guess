@@ -1,0 +1,30 @@
+[
+  {
+    "player_id": "p_sinner",
+    "team_id": "p_sinner",
+    "name": "Jannik Sinner",
+    "position": "",
+    "is_active": true
+  },
+  {
+    "player_id": "p_alcaraz",
+    "team_id": "p_alcaraz",
+    "name": "Carlos Alcaraz",
+    "position": "",
+    "is_active": true
+  },
+  {
+    "player_id": "p_djokovic",
+    "team_id": "p_djokovic",
+    "name": "Novak Djokovic",
+    "position": "",
+    "is_active": true
+  },
+  {
+    "player_id": "p_medvedev",
+    "team_id": "p_medvedev",
+    "name": "Daniil Medvedev",
+    "position": "",
+    "is_active": true
+  }
+]

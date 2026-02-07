@@ -1,0 +1,38 @@
+[
+  {
+    "game_id": "ten_atp_20260207_001",
+    "sport": "tennis",
+    "league": "atp",
+    "home_team": {
+      "team_id": "p_sinner",
+      "name": "Jannik Sinner",
+      "short_name": "SIN"
+    },
+    "away_team": {
+      "team_id": "p_alcaraz",
+      "name": "Carlos Alcaraz",
+      "short_name": "ALC"
+    },
+    "start_time": "2026-02-07T14:00:00",
+    "venue": "Hard Court",
+    "status": "scheduled"
+  },
+  {
+    "game_id": "ten_atp_20260207_002",
+    "sport": "tennis",
+    "league": "atp",
+    "home_team": {
+      "team_id": "p_djokovic",
+      "name": "Novak Djokovic",
+      "short_name": "DJO"
+    },
+    "away_team": {
+      "team_id": "p_medvedev",
+      "name": "Daniil Medvedev",
+      "short_name": "MED"
+    },
+    "start_time": "2026-02-07T16:00:00",
+    "venue": "Hard Court",
+    "status": "scheduled"
+  }
+]

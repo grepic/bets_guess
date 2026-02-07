@@ -1,0 +1,154 @@
+[
+  {
+    "player_id": "p_lebron",
+    "team_id": "team_lal",
+    "name": "LeBron James",
+    "position": "SF",
+    "jersey_number": 23,
+    "is_active": true
+  },
+  {
+    "player_id": "p_ad",
+    "team_id": "team_lal",
+    "name": "Anthony Davis",
+    "position": "PF",
+    "jersey_number": 3,
+    "is_active": true
+  },
+  {
+    "player_id": "p_reaves",
+    "team_id": "team_lal",
+    "name": "Austin Reaves",
+    "position": "SG",
+    "jersey_number": 15,
+    "is_active": true
+  },
+  {
+    "player_id": "p_tatum",
+    "team_id": "team_bos",
+    "name": "Jayson Tatum",
+    "position": "SF",
+    "jersey_number": 0,
+    "is_active": true
+  },
+  {
+    "player_id": "p_brown",
+    "team_id": "team_bos",
+    "name": "Jaylen Brown",
+    "position": "SG",
+    "jersey_number": 7,
+    "is_active": true
+  },
+  {
+    "player_id": "p_white",
+    "team_id": "team_bos",
+    "name": "Derrick White",
+    "position": "PG",
+    "jersey_number": 9,
+    "is_active": true
+  },
+  {
+    "player_id": "p_curry",
+    "team_id": "team_gsw",
+    "name": "Stephen Curry",
+    "position": "PG",
+    "jersey_number": 30,
+    "is_active": true
+  },
+  {
+    "player_id": "p_wiggins",
+    "team_id": "team_gsw",
+    "name": "Andrew Wiggins",
+    "position": "SF",
+    "jersey_number": 22,
+    "is_active": true
+  },
+  {
+    "player_id": "p_kuminga",
+    "team_id": "team_gsw",
+    "name": "Jonathan Kuminga",
+    "position": "PF",
+    "jersey_number": 0,
+    "is_active": true
+  },
+  {
+    "player_id": "p_jokic",
+    "team_id": "team_den",
+    "name": "Nikola Jokic",
+    "position": "C",
+    "jersey_number": 15,
+    "is_active": true
+  },
+  {
+    "player_id": "p_murray",
+    "team_id": "team_den",
+    "name": "Jamal Murray",
+    "position": "PG",
+    "jersey_number": 27,
+    "is_active": true
+  },
+  {
+    "player_id": "p_mpj",
+    "team_id": "team_den",
+    "name": "Michael Porter Jr.",
+    "position": "SF",
+    "jersey_number": 1,
+    "is_active": true
+  },
+  {
+    "player_id": "p_ag",
+    "team_id": "team_den",
+    "name": "Aaron Gordon",
+    "position": "PF",
+    "jersey_number": 50,
+    "is_active": true
+  },
+  {
+    "player_id": "p_giannis",
+    "team_id": "team_mil",
+    "name": "Giannis Antetokounmpo",
+    "position": "PF",
+    "jersey_number": 34,
+    "is_active": true
+  },
+  {
+    "player_id": "p_dame",
+    "team_id": "team_mil",
+    "name": "Damian Lillard",
+    "position": "PG",
+    "jersey_number": 0,
+    "is_active": true
+  },
+  {
+    "player_id": "p_middleton",
+    "team_id": "team_mil",
+    "name": "Khris Middleton",
+    "position": "SF",
+    "jersey_number": 22,
+    "is_active": true
+  },
+  {
+    "player_id": "p_embiid",
+    "team_id": "team_phi",
+    "name": "Joel Embiid",
+    "position": "C",
+    "jersey_number": 21,
+    "is_active": true
+  },
+  {
+    "player_id": "p_maxey",
+    "team_id": "team_phi",
+    "name": "Tyrese Maxey",
+    "position": "PG",
+    "jersey_number": 0,
+    "is_active": true
+  },
+  {
+    "player_id": "p_george",
+    "team_id": "team_phi",
+    "name": "Paul George",
+    "position": "SF",
+    "jersey_number": 8,
+    "is_active": true
+  }
+]

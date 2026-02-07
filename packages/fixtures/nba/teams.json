@@ -1,0 +1,32 @@
+[
+  {
+    "team_id": "team_lal",
+    "name": "Los Angeles Lakers",
+    "short_name": "LAL"
+  },
+  {
+    "team_id": "team_bos",
+    "name": "Boston Celtics",
+    "short_name": "BOS"
+  },
+  {
+    "team_id": "team_gsw",
+    "name": "Golden State Warriors",
+    "short_name": "GSW"
+  },
+  {
+    "team_id": "team_den",
+    "name": "Denver Nuggets",
+    "short_name": "DEN"
+  },
+  {
+    "team_id": "team_mil",
+    "name": "Milwaukee Bucks",
+    "short_name": "MIL"
+  },
+  {
+    "team_id": "team_phi",
+    "name": "Philadelphia 76ers",
+    "short_name": "PHI"
+  }
+]

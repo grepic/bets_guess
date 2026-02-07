@@ -1,0 +1,56 @@
+[
+  {
+    "game_id": "nhl_20260207_001",
+    "sport": "nhl",
+    "league": "nhl",
+    "home_team": {
+      "team_id": "team_tor",
+      "name": "Toronto Maple Leafs",
+      "short_name": "TOR"
+    },
+    "away_team": {
+      "team_id": "team_bru",
+      "name": "Boston Bruins",
+      "short_name": "BOS"
+    },
+    "start_time": "2026-02-07T19:00:00",
+    "venue": "Scotiabank Arena",
+    "status": "scheduled"
+  },
+  {
+    "game_id": "nhl_20260207_002",
+    "sport": "nhl",
+    "league": "nhl",
+    "home_team": {
+      "team_id": "team_edm",
+      "name": "Edmonton Oilers",
+      "short_name": "EDM"
+    },
+    "away_team": {
+      "team_id": "team_col",
+      "name": "Colorado Avalanche",
+      "short_name": "COL"
+    },
+    "start_time": "2026-02-07T21:00:00",
+    "venue": "Rogers Place",
+    "status": "scheduled"
+  },
+  {
+    "game_id": "nhl_20260207_003",
+    "sport": "nhl",
+    "league": "nhl",
+    "home_team": {
+      "team_id": "team_nyr",
+      "name": "New York Rangers",
+      "short_name": "NYR"
+    },
+    "away_team": {
+      "team_id": "team_car",
+      "name": "Carolina Hurricanes",
+      "short_name": "CAR"
+    },
+    "start_time": "2026-02-07T19:30:00",
+    "venue": "Madison Square Garden",
+    "status": "scheduled"
+  }
+]
