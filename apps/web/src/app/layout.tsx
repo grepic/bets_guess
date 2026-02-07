@@ -23,6 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </a>
                 <nav className="flex items-center gap-6 text-sm font-medium text-gray-600">
                   <a href="/" className="hover:text-brand-600 transition-colors">Dashboard</a>
+                  <a href="/odds-moves" className="hover:text-brand-600 transition-colors">Odds Moves</a>
+                  <a href="/alerts" className="hover:text-brand-600 transition-colors">Alerts</a>
                   <a href="/models" className="hover:text-brand-600 transition-colors">Models</a>
                 </nav>
               </div>

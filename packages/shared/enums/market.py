@@ -243,3 +243,16 @@ class RiskLevel(str, Enum):
     LOW = "low"
     MEDIUM = "medium"
     HIGH = "high"
+
+
+class SignalType(str, Enum):
+    ODDS_MOVE = "odds_move"
+    LINEUP_CONFIRMED = "lineup_confirmed"
+    KEY_PLAYER_OUT = "key_player_out"
+    MATCHUP_TREND = "matchup_trend"
+    SEGMENT_DOMINANCE = "segment_dominance"
+    FATIGUE_EDGE = "fatigue_edge"
+    REST_ADVANTAGE = "rest_advantage"
+    SCHEDULE_PRESSURE = "schedule_pressure"
+    PLAYOFF_CONTEXT = "playoff_context"
+    SEASON_TREND = "season_trend"

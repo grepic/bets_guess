@@ -1,0 +1,29 @@
+[
+  {
+    "game_id": "soc_ars_che_20260208",
+    "override_type": "injury",
+    "player_id": "saka_01",
+    "team_id": "arsenal",
+    "key": "Bukayo Saka",
+    "value": "out",
+    "note": "Hamstring injury, ruled out for 3 weeks"
+  },
+  {
+    "game_id": "soc_ars_che_20260208",
+    "override_type": "lineup",
+    "player_id": null,
+    "team_id": "chelsea",
+    "key": "Chelsea Starting XI",
+    "value": "Confirmed full strength",
+    "note": "All first-choice players available"
+  },
+  {
+    "game_id": "nba_lal_bos_20260208",
+    "override_type": "injury",
+    "player_id": "lebron_01",
+    "team_id": "lakers",
+    "key": "LeBron James",
+    "value": "doubtful",
+    "note": "Ankle soreness, game-time decision"
+  }
+]

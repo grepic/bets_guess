@@ -4,7 +4,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from apps.api.routes import catalog, games, odds, predictions, admin, builder
+from apps.api.routes import catalog, games, odds, predictions, admin, builder, signals
 
 app = FastAPI(
     title="SmartBets Pro API",
@@ -34,6 +34,7 @@ app.include_router(odds.router)
 app.include_router(predictions.router)
 app.include_router(admin.router)
 app.include_router(builder.router)
+app.include_router(signals.router)
 
 
 @app.get("/")

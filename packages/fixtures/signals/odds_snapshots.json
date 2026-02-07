@@ -1,0 +1,82 @@
+[
+  {
+    "game_id": "soc_ars_che_20260208",
+    "bookmaker": "bet365",
+    "market_key": "soccer_1x2_ft",
+    "outcome_label": "Home",
+    "line": null,
+    "price": 2.10,
+    "implied_prob": 0.4762,
+    "timestamp": "2026-02-08T10:00:00"
+  },
+  {
+    "game_id": "soc_ars_che_20260208",
+    "bookmaker": "bet365",
+    "market_key": "soccer_1x2_ft",
+    "outcome_label": "Home",
+    "line": null,
+    "price": 1.80,
+    "implied_prob": 0.5556,
+    "timestamp": "2026-02-08T11:30:00"
+  },
+  {
+    "game_id": "soc_ars_che_20260208",
+    "bookmaker": "bet365",
+    "market_key": "soccer_1x2_ft",
+    "outcome_label": "Draw",
+    "line": null,
+    "price": 3.40,
+    "implied_prob": 0.2941,
+    "timestamp": "2026-02-08T10:00:00"
+  },
+  {
+    "game_id": "soc_ars_che_20260208",
+    "bookmaker": "bet365",
+    "market_key": "soccer_1x2_ft",
+    "outcome_label": "Draw",
+    "line": null,
+    "price": 3.50,
+    "implied_prob": 0.2857,
+    "timestamp": "2026-02-08T11:30:00"
+  },
+  {
+    "game_id": "nba_lal_bos_20260208",
+    "bookmaker": "draftkings",
+    "market_key": "nba_spread",
+    "outcome_label": "Home",
+    "line": -3.5,
+    "price": 1.91,
+    "implied_prob": 0.5236,
+    "timestamp": "2026-02-08T15:00:00"
+  },
+  {
+    "game_id": "nba_lal_bos_20260208",
+    "bookmaker": "draftkings",
+    "market_key": "nba_spread",
+    "outcome_label": "Home",
+    "line": -4.5,
+    "price": 1.91,
+    "implied_prob": 0.5236,
+    "timestamp": "2026-02-08T16:30:00"
+  },
+  {
+    "game_id": "nba_lal_bos_20260208",
+    "bookmaker": "draftkings",
+    "market_key": "nba_totals",
+    "outcome_label": "Over",
+    "line": 220.5,
+    "price": 1.95,
+    "implied_prob": 0.5128,
+    "timestamp": "2026-02-08T15:00:00"
+  },
+  {
+    "game_id": "nba_lal_bos_20260208",
+    "bookmaker": "draftkings",
+    "market_key": "nba_totals",
+    "outcome_label": "Over",
+    "line": 218.5,
+    "price": 1.87,
+    "implied_prob": 0.5348,
+    "timestamp": "2026-02-08T16:30:00"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "arsenal": [
+    {"goals": 2, "goals_conceded": 1, "1h_goals": 1, "1h_goals_conceded": 0, "2h_goals": 1, "2h_goals_conceded": 1},
+    {"goals": 1, "goals_conceded": 0, "1h_goals": 0, "1h_goals_conceded": 0, "2h_goals": 1, "2h_goals_conceded": 0},
+    {"goals": 3, "goals_conceded": 2, "1h_goals": 2, "1h_goals_conceded": 1, "2h_goals": 1, "2h_goals_conceded": 1},
+    {"goals": 0, "goals_conceded": 1, "1h_goals": 0, "1h_goals_conceded": 1, "2h_goals": 0, "2h_goals_conceded": 0},
+    {"goals": 2, "goals_conceded": 0, "1h_goals": 1, "1h_goals_conceded": 0, "2h_goals": 1, "2h_goals_conceded": 0}
+  ],
+  "chelsea": [
+    {"goals": 1, "goals_conceded": 1, "1h_goals": 0, "1h_goals_conceded": 1, "2h_goals": 1, "2h_goals_conceded": 0},
+    {"goals": 2, "goals_conceded": 2, "1h_goals": 1, "1h_goals_conceded": 1, "2h_goals": 1, "2h_goals_conceded": 1},
+    {"goals": 0, "goals_conceded": 3, "1h_goals": 0, "1h_goals_conceded": 2, "2h_goals": 0, "2h_goals_conceded": 1},
+    {"goals": 1, "goals_conceded": 0, "1h_goals": 1, "1h_goals_conceded": 0, "2h_goals": 0, "2h_goals_conceded": 0},
+    {"goals": 3, "goals_conceded": 1, "1h_goals": 2, "1h_goals_conceded": 0, "2h_goals": 1, "2h_goals_conceded": 1}
+  ],
+  "lakers": [
+    {"points": 112, "points_against": 105, "1h_points": 58, "1h_points_against": 52, "2h_points": 54, "2h_points_against": 53},
+    {"points": 98, "points_against": 110, "1h_points": 45, "1h_points_against": 55, "2h_points": 53, "2h_points_against": 55},
+    {"points": 120, "points_against": 115, "1h_points": 62, "1h_points_against": 58, "2h_points": 58, "2h_points_against": 57}
+  ],
+  "celtics": [
+    {"points": 118, "points_against": 102, "1h_points": 60, "1h_points_against": 50, "2h_points": 58, "2h_points_against": 52},
+    {"points": 105, "points_against": 99, "1h_points": 52, "1h_points_against": 48, "2h_points": 53, "2h_points_against": 51},
+    {"points": 125, "points_against": 108, "1h_points": 65, "1h_points_against": 55, "2h_points": 60, "2h_points_against": 53}
+  ]
+}

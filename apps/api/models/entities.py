@@ -209,3 +209,146 @@ class Override(Base):
     __table_args__ = (
         Index("ix_override_game", "game_id"),
     )
+
+
+# ────────────────────────────────────────────────────────────
+# Intelligence Signals layer (upgrade)
+# ────────────────────────────────────────────────────────────
+
+class IntelligenceSignal(Base):
+    __tablename__ = "intelligence_signals"
+
+    id = Column(String(64), primary_key=True)  # uuid
+    sport_id = Column(String(32), nullable=True)
+    league_id = Column(String(64), nullable=True)
+    game_id = Column(String(64), nullable=True)
+    team_id = Column(String(64), nullable=True)
+    player_id = Column(String(64), nullable=True)
+    signal_type = Column(String(32), nullable=False)  # SignalType enum value
+    signal_strength = Column(Float, nullable=False, default=0.5)
+    reliability = Column(Float, nullable=False, default=0.5)
+    headline = Column(String(256), default="")
+    description = Column(Text, default="")
+    affected_market_groups = Column(JSONB, default=list)
+    affected_periods = Column(JSONB, default=list)
+    metadata = Column(JSONB, default=dict)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    __table_args__ = (
+        Index("ix_signal_game", "game_id"),
+        Index("ix_signal_type", "signal_type"),
+        Index("ix_signal_created", "created_at"),
+        Index("ix_signal_game_type", "game_id", "signal_type"),
+    )
+
+
+class TeamSegmentProfile(Base):
+    __tablename__ = "team_segment_profiles"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    team_id = Column(String(64), nullable=False)
+    segment_period = Column(String(16), nullable=False)  # Period enum value
+    offensive_rating = Column(Float, default=0.0)
+    defensive_rating = Column(Float, default=0.0)
+    net_rating = Column(Float, default=0.0)
+    volatility = Column(Float, default=0.0)
+    clutch_factor = Column(Float, default=0.0)
+    sample_size = Column(Integer, default=0)
+    updated_at = Column(DateTime, default=datetime.utcnow)
+
+    __table_args__ = (
+        UniqueConstraint("team_id", "segment_period", name="uq_team_segment"),
+        Index("ix_tsp_team", "team_id"),
+    )
+
+
+class MatchupSegmentProfile(Base):
+    __tablename__ = "matchup_segment_profiles"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    team_a_id = Column(String(64), nullable=False)
+    team_b_id = Column(String(64), nullable=False)
+    segment_period = Column(String(16), nullable=False)
+    adjusted_edge_pp = Column(Float, default=0.0)
+    h2h_weighted_effect_pp = Column(Float, default=0.0)
+    confidence = Column(Float, default=0.0)
+    style_tags = Column(JSONB, default=list)
+    sample_size = Column(Integer, default=0)
+    updated_at = Column(DateTime, default=datetime.utcnow)
+
+    __table_args__ = (
+        UniqueConstraint("team_a_id", "team_b_id", "segment_period", name="uq_matchup_segment"),
+        Index("ix_msp_teams", "team_a_id", "team_b_id"),
+    )
+
+
+class AdjustedPrediction(Base):
+    __tablename__ = "adjusted_predictions"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    base_prediction_id = Column(Integer, nullable=True)
+    game_id = Column(String(64), nullable=False)
+    market_key = Column(String(128), nullable=False)
+    outcome_label = Column(String(64), nullable=False)
+    base_prob = Column(Float, nullable=False)
+    adjusted_prob = Column(Float, nullable=False)
+    adjusted_fair_odds = Column(Float, nullable=False)
+    adjusted_edge = Column(Float, nullable=True)
+    interval_low = Column(Float, nullable=True)
+    interval_high = Column(Float, nullable=True)
+    applied_signal_ids = Column(JSONB, default=list)
+    signal_reasons = Column(JSONB, default=list)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    __table_args__ = (
+        Index("ix_apred_game", "game_id"),
+        Index("ix_apred_game_market", "game_id", "market_key"),
+    )
+
+
+class NotificationRule(Base):
+    __tablename__ = "notification_rules"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_key = Column(String(128), nullable=False)
+    sports = Column(JSONB, default=list)
+    leagues = Column(JSONB, default=list)
+    market_groups = Column(JSONB, default=list)
+    min_edge = Column(Float, default=3.0)
+    min_confidence = Column(Float, default=0.0)
+    min_prob = Column(Float, default=0.0)
+    quiet_hours = Column(JSONB, default=dict)
+    max_alerts_per_game = Column(Integer, default=3)
+    max_alerts_per_day = Column(Integer, default=20)
+    cooldown_minutes = Column(Integer, default=30)
+    enabled = Column(Boolean, default=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    __table_args__ = (
+        Index("ix_nrule_user", "user_key"),
+    )
+
+
+class NotificationSent(Base):
+    __tablename__ = "notifications_sent"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    rule_id = Column(Integer, ForeignKey("notification_rules.id"), nullable=False)
+    game_id = Column(String(64), nullable=False)
+    market_key = Column(String(128), nullable=False)
+    line = Column(Float, nullable=True)
+    selection = Column(String(64), default="")
+    edge_pct = Column(Float, default=0.0)
+    model_prob = Column(Float, default=0.0)
+    fair_odds = Column(Float, default=0.0)
+    signals_summary = Column(JSONB, default=list)
+    payload = Column(JSONB, default=dict)
+    sent_at = Column(DateTime, default=datetime.utcnow)
+    dedup_hash = Column(String(64), nullable=False)
+
+    __table_args__ = (
+        Index("ix_nsent_rule", "rule_id"),
+        Index("ix_nsent_dedup", "dedup_hash"),
+        Index("ix_nsent_game", "game_id"),
+        Index("ix_nsent_sent", "sent_at"),
+    )

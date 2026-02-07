@@ -84,3 +84,70 @@ export async function fetchBuilderSuggestions(gameId: string) {
     { game_id: gameId },
   );
 }
+
+// ────────────────────────────────────────────────────────────
+// Intelligence Signals & Alerts API
+// ────────────────────────────────────────────────────────────
+
+export async function fetchSignals(params: {
+  game_id?: string;
+  signal_type?: string;
+  limit?: string;
+}) {
+  return fetchApi<{ count: number; signals: any[]; disclaimer: string }>(
+    '/signals',
+    params as Record<string, string>,
+  );
+}
+
+export async function fetchOddsMoves(params: {
+  game_id?: string;
+  min_delta?: string;
+  limit?: string;
+}) {
+  return fetchApi<{ count: number; moves: any[]; disclaimer: string }>(
+    '/odds/moves',
+    params as Record<string, string>,
+  );
+}
+
+export async function fetchAdjustedPredictions(params: {
+  game_id?: string;
+  market_key?: string;
+  min_edge?: string;
+  limit?: string;
+}) {
+  return fetchApi<{ count: number; predictions: any[]; disclaimer: string }>(
+    '/predictions/adjusted',
+    params as Record<string, string>,
+  );
+}
+
+export async function fetchNotificationRules(userKey?: string) {
+  return fetchApi<{ count: number; rules: any[] }>(
+    '/notifications/rules',
+    userKey ? { user_key: userKey } : undefined,
+  );
+}
+
+export async function createNotificationRule(rule: Record<string, any>) {
+  const url = new URL('/notifications/rules', API_BASE);
+  const res = await fetch(url.toString(), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(rule),
+  });
+  if (!res.ok) throw new Error(`API error: ${res.status}`);
+  return res.json();
+}
+
+export async function fetchNotificationsSent(params: {
+  user_key?: string;
+  game_id?: string;
+  limit?: string;
+}) {
+  return fetchApi<{ count: number; notifications: any[]; disclaimer: string }>(
+    '/notifications/sent',
+    params as Record<string, string>,
+  );
+}

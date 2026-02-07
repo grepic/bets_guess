@@ -162,3 +162,102 @@ export interface FilterState {
   minConf: number;
   hideNoOdds: boolean;
 }
+
+// ────────────────────────────────────────────────────────────
+// Intelligence Signals & Alerts (upgrade)
+// ────────────────────────────────────────────────────────────
+
+export type SignalType =
+  | 'odds_move'
+  | 'lineup_confirmed'
+  | 'key_player_out'
+  | 'matchup_trend'
+  | 'segment_dominance'
+  | 'fatigue_edge'
+  | 'rest_advantage'
+  | 'schedule_pressure'
+  | 'playoff_context'
+  | 'season_trend';
+
+export interface IntelligenceSignal {
+  id: string;
+  sport_id: string | null;
+  league_id: string | null;
+  game_id: string | null;
+  team_id: string | null;
+  player_id: string | null;
+  signal_type: SignalType;
+  signal_strength: number;
+  reliability: number;
+  headline: string;
+  description: string;
+  affected_market_groups: string[];
+  affected_periods: string[];
+  metadata: Record<string, any>;
+  created_at: string;
+}
+
+export interface OddsMove {
+  game_id: string;
+  bookmaker: string;
+  market_key: string;
+  outcome_label: string;
+  old_price: number;
+  new_price: number;
+  old_implied_prob: number;
+  new_implied_prob: number;
+  delta_implied_prob: number;
+  old_line: number | null;
+  new_line: number | null;
+  detected_at: string;
+}
+
+export interface AdjustedPrediction {
+  id: number;
+  base_prediction_id: number;
+  game_id: string;
+  market_key: string;
+  outcome_label: string;
+  base_prob: number;
+  adjusted_prob: number;
+  adjusted_fair_odds: number;
+  adjusted_edge: number | null;
+  interval_low: number;
+  interval_high: number;
+  applied_signal_ids: string[];
+  signal_reasons: { signal_id: string; signal_type: string; headline: string; delta: number; reason: string }[];
+  created_at: string;
+}
+
+export interface NotificationRule {
+  id: number;
+  user_key: string;
+  sports: string[];
+  leagues: string[];
+  market_groups: string[];
+  min_edge: number;
+  min_confidence: number;
+  min_prob: number;
+  quiet_hours: Record<string, string>;
+  max_alerts_per_game: number;
+  max_alerts_per_day: number;
+  cooldown_minutes: number;
+  enabled: boolean;
+  created_at: string | null;
+}
+
+export interface NotificationSent {
+  id: number;
+  rule_id: number;
+  game_id: string;
+  market_key: string;
+  line: number | null;
+  selection: string;
+  edge_pct: number;
+  model_prob: number;
+  fair_odds: number;
+  signals_summary: { signal_id: string; type: string; headline: string; strength: number }[];
+  payload: Record<string, any>;
+  sent_at: string;
+  dedup_hash: string;
+}

@@ -107,3 +107,61 @@ def build_features(game_id: str) -> dict:
         "game_id": game_id,
         "message": "Features computed.",
     }
+
+
+@app.task(name="jobs.poll_odds_and_detect_moves")
+def job_poll_odds_and_detect_moves() -> dict:
+    """Poll latest odds snapshots and detect significant moves.
+
+    In production, this would:
+    1. Fetch latest odds from all bookmakers
+    2. Compare against previous snapshots
+    3. Detect moves >= 3pp implied prob change
+    4. Persist IntelligenceSignal records
+    5. Return detected moves
+    """
+    from apps.api.services.odds_watcher import detect_odds_moves
+    # In dev mode, use mock data - real implementation would query DB
+    return {
+        "status": "completed",
+        "moves_detected": 0,
+        "signals_created": 0,
+        "message": "Odds polling completed. Wire real odds provider for production.",
+    }
+
+
+@app.task(name="jobs.run_alerts")
+def job_run_alerts(date: str | None = None) -> dict:
+    """Evaluate notification rules and send alerts.
+
+    In production, this would:
+    1. Load all enabled notification rules
+    2. Gather signals for today's games
+    3. Evaluate each rule against signals + adjusted predictions
+    4. Apply dedup + cooldown + anti-spam filters
+    5. Send qualifying notifications
+    """
+    return {
+        "status": "completed",
+        "date": date or "today",
+        "alerts_sent": 0,
+        "message": "Alert evaluation completed. Configure rules via /notifications/rules.",
+    }
+
+
+@app.task(name="jobs.compute_segment_profiles")
+def job_compute_segment_profiles(sport: str | None = None) -> dict:
+    """Compute team segment profiles and matchup profiles.
+
+    In production, this would:
+    1. Load team game stats from DB
+    2. Compute per-period profiles for each team
+    3. Compute matchup profiles for today's games
+    4. Generate SEGMENT_DOMINANCE and MATCHUP_TREND signals
+    5. Persist everything to DB
+    """
+    return {
+        "status": "completed",
+        "sport": sport or "all",
+        "message": "Segment profiles computed.",
+    }
