@@ -12,6 +12,7 @@ from apps.api.providers.mock_provider import (
     MockOddsProvider, MockScheduleProvider, MockStatsProvider,
 )
 from apps.api.services.prediction_service import PredictionService
+from apps.api.services.signal_adjuster import adjust_prediction
 
 router = APIRouter(tags=["predictions"])
 
@@ -97,6 +98,7 @@ async def get_best_bets(
     min_conf: float = Query(0.0, description="Minimum confidence (interval low)"),
     min_prob: float = Query(0.0, description="Minimum probability"),
     hide_no_odds: bool = Query(False, description="Hide bets without bookmaker odds"),
+    use_signals: bool = Query(False, description="Apply intelligence signal adjustments"),
     limit: int = Query(50, le=200),
 ):
     """Get best value bets based on model edge over bookmaker odds."""
@@ -123,7 +125,37 @@ async def get_best_bets(
 
     bets = await _service.generate_best_bets(filters)
 
-    return {
+    # Apply signal adjustments if requested
+    signal_adjusted = []
+    if use_signals:
+        from apps.api.routes.signals import _signals_store
+        for b in bets:
+            game_signals = [s for s in _signals_store if s.game_id == b.game_id]
+            if game_signals:
+                adjusted = adjust_prediction(
+                    base_prediction_id=None,
+                    game_id=b.game_id,
+                    market_key=b.market_spec.normalized_key,
+                    outcome_label=b.outcome_label,
+                    base_prob=b.model_prob,
+                    interval_low=b.interval_low,
+                    interval_high=b.interval_high,
+                    signals=game_signals,
+                    bookmaker_odds=b.bookmaker_odds,
+                )
+                signal_adjusted.append({
+                    "game_id": b.game_id,
+                    "market": b.market_spec.normalized_key,
+                    "outcome_label": b.outcome_label,
+                    "base_prob": adjusted.base_prob,
+                    "adjusted_prob": adjusted.adjusted_prob,
+                    "adjusted_fair_odds": adjusted.adjusted_fair_odds,
+                    "adjusted_edge": adjusted.adjusted_edge,
+                    "applied_signals": len(adjusted.applied_signal_ids),
+                    "signal_reasons": adjusted.signal_reasons,
+                })
+
+    result = {
         "count": len(bets),
         "bets": [b.model_dump() for b in bets],
         "disclaimer": DISCLAIMER,
@@ -133,3 +165,6 @@ async def get_best_bets(
             "Probabilities shown are model estimates with uncertainty ranges - not certainties."
         ),
     }
+    if use_signals and signal_adjusted:
+        result["signal_adjustments"] = signal_adjusted
+    return result

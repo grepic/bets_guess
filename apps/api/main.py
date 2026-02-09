@@ -37,6 +37,18 @@ app.include_router(builder.router)
 app.include_router(signals.router)
 
 
+@app.on_event("startup")
+async def _seed_demo_stores():
+    """Populate in-memory signal stores with fixture-derived demo data."""
+    from apps.api.services.demo_seed import seed_demo_data
+    from apps.api.routes import signals as signals_module
+
+    data = seed_demo_data()
+    signals_module._signals_store.extend(data["signals"])
+    signals_module._moves_store.extend(data["moves"])
+    signals_module._adjusted_store.extend(data["adjusted_predictions"])
+
+
 @app.get("/")
 async def root():
     return {

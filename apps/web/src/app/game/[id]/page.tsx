@@ -2,11 +2,12 @@
 
 import { useParams } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
-import { fetchGame, fetchPredictions, fetchBuilderSuggestions } from '@/lib/api';
+import { fetchGame, fetchPredictions, fetchBuilderSuggestions, fetchSignals } from '@/lib/api';
 import { formatTime, sportIcon, formatOdds, formatProb } from '@/lib/utils';
 import { MarketAccordion } from '@/components/MarketAccordion';
 import { GameDetailSkeleton } from '@/components/Skeleton';
-import type { PredictionResult } from '@/types';
+import { SignalsBadge } from '@/components/SignalsBadge';
+import type { PredictionResult, IntelligenceSignal } from '@/types';
 
 export default function GameDetailPage() {
   const params = useParams();
@@ -29,6 +30,12 @@ export default function GameDetailPage() {
     enabled: !!game,
   });
 
+  const { data: signalsData } = useQuery({
+    queryKey: ['signals', gameId],
+    queryFn: () => fetchSignals({ game_id: gameId }),
+    enabled: !!game,
+  });
+
   if (loadingGame || loadingPreds) return <GameDetailSkeleton />;
   if (!game) return <div className="card p-8 text-center text-gray-500">Game not found</div>;
 
@@ -45,6 +52,7 @@ export default function GameDetailPage() {
   });
 
   const suggestions = builderData?.suggestions || [];
+  const signals: IntelligenceSignal[] = signalsData?.signals || [];
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -70,6 +78,13 @@ export default function GameDetailPage() {
           These are NOT guarantees. Bet responsibly.
         </p>
       </div>
+
+      {/* Intelligence Signals */}
+      {signals.length > 0 && (
+        <div className="card p-4 mb-4">
+          <SignalsBadge signals={signals} />
+        </div>
+      )}
 
       {/* Market accordions */}
       <div className="space-y-3">

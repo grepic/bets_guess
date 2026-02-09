@@ -111,22 +111,37 @@ def build_features(game_id: str) -> dict:
 
 @app.task(name="jobs.poll_odds_and_detect_moves")
 def job_poll_odds_and_detect_moves() -> dict:
-    """Poll latest odds snapshots and detect significant moves.
+    """Poll latest odds snapshots and detect significant moves."""
+    import json
+    from datetime import datetime
+    from pathlib import Path
 
-    In production, this would:
-    1. Fetch latest odds from all bookmakers
-    2. Compare against previous snapshots
-    3. Detect moves >= 3pp implied prob change
-    4. Persist IntelligenceSignal records
-    5. Return detected moves
-    """
+    from packages.shared.schemas.game import OddsSnapshot
     from apps.api.services.odds_watcher import detect_odds_moves
-    # In dev mode, use mock data - real implementation would query DB
+
+    fixtures_dir = Path(__file__).resolve().parent.parent.parent.parent / "packages" / "fixtures"
+    snaps_path = fixtures_dir / "signals" / "odds_snapshots.json"
+
+    if not snaps_path.exists():
+        return {"status": "completed", "moves_detected": 0, "signals_created": 0,
+                "message": "No odds snapshot fixtures found."}
+
+    raw = json.loads(snaps_path.read_text())
+    snapshots = [
+        OddsSnapshot(
+            game_id=s["game_id"], bookmaker=s["bookmaker"],
+            market_key=s["market_key"], outcome_label=s["outcome_label"],
+            line=s.get("line"), price=s["price"],
+            timestamp=datetime.fromisoformat(s["timestamp"]),
+        )
+        for s in raw
+    ]
+    moves, signals = detect_odds_moves(snapshots)
     return {
         "status": "completed",
-        "moves_detected": 0,
-        "signals_created": 0,
-        "message": "Odds polling completed. Wire real odds provider for production.",
+        "moves_detected": len(moves),
+        "signals_created": len(signals),
+        "message": f"Detected {len(moves)} odds moves, created {len(signals)} signals.",
     }
 
 
@@ -151,17 +166,47 @@ def job_run_alerts(date: str | None = None) -> dict:
 
 @app.task(name="jobs.compute_segment_profiles")
 def job_compute_segment_profiles(sport: str | None = None) -> dict:
-    """Compute team segment profiles and matchup profiles.
+    """Compute team segment profiles and matchup profiles."""
+    import json
+    from pathlib import Path
 
-    In production, this would:
-    1. Load team game stats from DB
-    2. Compute per-period profiles for each team
-    3. Compute matchup profiles for today's games
-    4. Generate SEGMENT_DOMINANCE and MATCHUP_TREND signals
-    5. Persist everything to DB
-    """
+    from apps.api.services.segment_profiles import (
+        compute_team_segment_profiles,
+        compute_matchup_segment_profiles,
+        generate_segment_signals,
+    )
+
+    fixtures_dir = Path(__file__).resolve().parent.parent.parent.parent / "packages" / "fixtures"
+    seg_path = fixtures_dir / "signals" / "segment_stats.json"
+
+    if not seg_path.exists():
+        return {"status": "completed", "sport": sport or "all",
+                "message": "No segment stats fixtures found."}
+
+    raw = json.loads(seg_path.read_text())
+    total_profiles = 0
+    total_signals = 0
+
+    matchup_pairs = [
+        ("arsenal", "chelsea", "soc_ars_che_20260208"),
+        ("lakers", "celtics", "nba_lal_bos_20260208"),
+    ]
+    for team_a, team_b, game_id in matchup_pairs:
+        stats_a = raw.get(team_a, [])
+        stats_b = raw.get(team_b, [])
+        if not stats_a or not stats_b:
+            continue
+        profiles_a = compute_team_segment_profiles(team_a, stats_a)
+        profiles_b = compute_team_segment_profiles(team_b, stats_b)
+        matchup_profiles = compute_matchup_segment_profiles(team_a, team_b, profiles_a, profiles_b)
+        seg_signals = generate_segment_signals(team_a, team_b, game_id, matchup_profiles, profiles_a, profiles_b)
+        total_profiles += len(profiles_a) + len(profiles_b) + len(matchup_profiles)
+        total_signals += len(seg_signals)
+
     return {
         "status": "completed",
         "sport": sport or "all",
-        "message": "Segment profiles computed.",
+        "profiles_computed": total_profiles,
+        "signals_created": total_signals,
+        "message": f"Computed {total_profiles} profiles, created {total_signals} signals.",
     }

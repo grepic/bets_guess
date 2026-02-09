@@ -1,13 +1,16 @@
 'use client';
 
 import { useState } from 'react';
-import type { BestBet } from '@/types';
+import { useQuery } from '@tanstack/react-query';
+import type { BestBet, IntelligenceSignal } from '@/types';
 import {
   cn, edgeColor, formatEdge, formatOdds, formatProb,
   formatTime, riskColor, sportIcon, sportLabel, tagColor,
 } from '@/lib/utils';
+import { fetchSignals } from '@/lib/api';
 import { FactorList } from './FactorList';
 import { ConfidenceBadge } from './ConfidenceBadge';
+import { SignalsBadge } from './SignalsBadge';
 
 interface Props {
   bet: BestBet;
@@ -69,6 +72,9 @@ export function BetCard({ bet }: Props) {
       {/* Confidence interval */}
       <ConfidenceBadge low={bet.interval_low} high={bet.interval_high} prob={bet.model_prob} />
 
+      {/* Signals */}
+      <GameSignals gameId={bet.game_id} />
+
       {/* Risk */}
       {bet.risk_note && (
         <p className={cn('text-xs mt-2', riskColor(bet.risk_level))}>
@@ -87,6 +93,23 @@ export function BetCard({ bet }: Props) {
       )}
 
       {expanded && <FactorList factors={bet.factors} />}
+    </div>
+  );
+}
+
+function GameSignals({ gameId }: { gameId: string }) {
+  const { data } = useQuery({
+    queryKey: ['signals', gameId],
+    queryFn: () => fetchSignals({ game_id: gameId, limit: '5' }),
+    staleTime: 60_000,
+  });
+
+  const signals: IntelligenceSignal[] = data?.signals || [];
+  if (signals.length === 0) return null;
+
+  return (
+    <div className="mt-2">
+      <SignalsBadge signals={signals} compact />
     </div>
   );
 }

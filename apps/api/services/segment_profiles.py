@@ -127,8 +127,9 @@ def compute_matchup_segment_profiles(
         a = profiles_a[period]
         b = profiles_b[period]
 
-        # Edge: (A_off - B_def) - (B_off - A_def), in points/goals per game
-        edge_pp = (a.offensive_rating - b.defensive_rating) - (b.offensive_rating - a.defensive_rating)
+        # Edge: A_net - B_net, in points/goals per game
+        # (defensive_rating = goals conceded, so net = off - def)
+        edge_pp = a.net_rating - b.net_rating
 
         # H2H effect
         h2h_effect = 0.0
@@ -142,7 +143,7 @@ def compute_matchup_segment_profiles(
 
         # Confidence: based on sample sizes
         min_sample = min(a.sample_size, b.sample_size)
-        confidence = min(1.0, min_sample / 20.0)
+        confidence = min(1.0, min_sample / 10.0)
 
         # Style tags
         style_tags = []

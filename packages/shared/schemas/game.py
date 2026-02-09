@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import datetime as _dt
 from datetime import date, datetime
 
 from pydantic import BaseModel, Field
@@ -64,7 +65,7 @@ class OverrideRequest(BaseModel):
 
 
 class FilterParams(BaseModel):
-    date: date | None = None
+    date: _dt.date | None = None
     sport: Sport | None = None
     league: League | None = None
     market_group: MarketGroup | None = None
