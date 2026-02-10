@@ -1,7 +1,8 @@
-"""Celery worker for background jobs: ingest, predict, backtest."""
+"""Celery worker for background jobs: ingest, predict, backtest, signals."""
 from __future__ import annotations
 
 from celery import Celery
+from celery.schedules import crontab
 
 from apps.api.core.config import get_settings
 
@@ -22,6 +23,28 @@ app.conf.update(
     task_track_started=True,
     task_time_limit=600,
     task_soft_time_limit=540,
+    beat_schedule={
+        "poll-odds-every-5-min": {
+            "task": "jobs.poll_odds_and_detect_moves",
+            "schedule": 300.0,  # every 5 minutes
+        },
+        "compute-segments-hourly": {
+            "task": "jobs.compute_segment_profiles",
+            "schedule": crontab(minute=0),  # every hour at :00
+        },
+        "run-alerts-every-10-min": {
+            "task": "jobs.run_alerts",
+            "schedule": 600.0,  # every 10 minutes
+        },
+        "ingest-data-every-30-min": {
+            "task": "jobs.ingest_data",
+            "schedule": 1800.0,  # every 30 minutes
+        },
+        "run-predictions-hourly": {
+            "task": "jobs.run_predictions",
+            "schedule": crontab(minute=15),  # every hour at :15
+        },
+    },
 )
 
 
@@ -147,20 +170,46 @@ def job_poll_odds_and_detect_moves() -> dict:
 
 @app.task(name="jobs.run_alerts")
 def job_run_alerts(date: str | None = None) -> dict:
-    """Evaluate notification rules and send alerts.
+    """Evaluate notification rules and send alerts."""
+    from apps.api.services.alerts import evaluate_rules_for_date
+    from apps.api.services.demo_seed import seed_demo_data
 
-    In production, this would:
-    1. Load all enabled notification rules
-    2. Gather signals for today's games
-    3. Evaluate each rule against signals + adjusted predictions
-    4. Apply dedup + cooldown + anti-spam filters
-    5. Send qualifying notifications
-    """
+    # In dev mode, load demo data; in production this would query DB
+    data = seed_demo_data()
+    signals = data["signals"]
+    adjusted = data["adjusted_predictions"]
+
+    # Load rules from in-memory store (in production: from DB)
+    from apps.api.routes.signals import _rules_store, _sent_store
+
+    if not _rules_store:
+        return {
+            "status": "completed",
+            "date": date or "today",
+            "alerts_sent": 0,
+            "message": "No notification rules configured. Create one via POST /notifications/rules.",
+        }
+
+    # Build sent history by rule
+    sent_by_rule: dict[int, list] = {}
+    for s in _sent_store:
+        sent_by_rule.setdefault(s.rule_id, []).append(s)
+
+    new_notifications = evaluate_rules_for_date(
+        rules=list(_rules_store),
+        adjusted_predictions=adjusted,
+        signals=signals,
+        sent_history_by_rule=sent_by_rule,
+    )
+
+    # Persist to in-memory store
+    _sent_store.extend(new_notifications)
+
     return {
         "status": "completed",
         "date": date or "today",
-        "alerts_sent": 0,
-        "message": "Alert evaluation completed. Configure rules via /notifications/rules.",
+        "alerts_sent": len(new_notifications),
+        "message": f"Evaluated {len(_rules_store)} rules, sent {len(new_notifications)} alerts.",
     }
 
 

@@ -231,7 +231,7 @@ class IntelligenceSignal(Base):
     description = Column(Text, default="")
     affected_market_groups = Column(JSONB, default=list)
     affected_periods = Column(JSONB, default=list)
-    metadata = Column(JSONB, default=dict)
+    signal_metadata = Column("metadata", JSONB, default=dict)
     created_at = Column(DateTime, default=datetime.utcnow)
 
     __table_args__ = (

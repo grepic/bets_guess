@@ -1,10 +1,26 @@
 """SmartBets Pro API - Main FastAPI application."""
 from __future__ import annotations
 
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from apps.api.routes import catalog, games, odds, predictions, admin, builder, signals
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Startup: seed demo stores. Shutdown: cleanup."""
+    from apps.api.services.demo_seed import seed_demo_data
+    from apps.api.routes import signals as signals_module
+
+    data = seed_demo_data()
+    signals_module._signals_store.extend(data["signals"])
+    signals_module._moves_store.extend(data["moves"])
+    signals_module._adjusted_store.extend(data["adjusted_predictions"])
+    yield
+
 
 app = FastAPI(
     title="SmartBets Pro API",
@@ -18,6 +34,7 @@ app = FastAPI(
         "call 1-800-522-4700 (National Problem Gambling Helpline)."
     ),
     version="1.0.0",
+    lifespan=lifespan,
 )
 
 app.add_middleware(
@@ -35,18 +52,6 @@ app.include_router(predictions.router)
 app.include_router(admin.router)
 app.include_router(builder.router)
 app.include_router(signals.router)
-
-
-@app.on_event("startup")
-async def _seed_demo_stores():
-    """Populate in-memory signal stores with fixture-derived demo data."""
-    from apps.api.services.demo_seed import seed_demo_data
-    from apps.api.routes import signals as signals_module
-
-    data = seed_demo_data()
-    signals_module._signals_store.extend(data["signals"])
-    signals_module._moves_store.extend(data["moves"])
-    signals_module._adjusted_store.extend(data["adjusted_predictions"])
 
 
 @app.get("/")
