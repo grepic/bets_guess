@@ -27,7 +27,7 @@ export default function Dashboard() {
   const effectiveDate = activeTab === 'today' ? getToday() : activeTab === 'tomorrow' ? getTomorrow() : filters.date;
 
   const { data, isLoading, error } = useQuery({
-    queryKey: ['best-bets', effectiveDate, filters.sport, filters.marketGroup, filters.minEdge, filters.minProb, filters.hideNoOdds],
+    queryKey: ['best-bets', effectiveDate, filters.sport, filters.marketGroup, filters.minEdge, filters.minProb, filters.minConf, filters.hideNoOdds],
     queryFn: () =>
       fetchBestBets({
         date: effectiveDate,
@@ -35,6 +35,7 @@ export default function Dashboard() {
         market_group: filters.marketGroup || undefined,
         min_edge: String(filters.minEdge),
         min_prob: String(filters.minProb),
+        min_conf: filters.minConf ? String(filters.minConf) : undefined,
         hide_no_odds: filters.hideNoOdds ? 'true' : undefined,
         limit: '100',
       }),

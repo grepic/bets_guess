@@ -1,4 +1,4 @@
-FROM python:3.12-slim
+FROM python:3.12-slim AS base
 
 WORKDIR /app
 
@@ -7,11 +7,18 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY packages/ /app/packages/
 COPY apps/api/ /app/apps/api/
+COPY alembic/ /app/alembic/
+COPY alembic.ini /app/alembic.ini
 
 ENV PYTHONPATH=/app
-ENV SMARTBETS_DATABASE_URL=postgresql+asyncpg://smartbets:smartbets@postgres:5432/smartbets
-ENV SMARTBETS_REDIS_URL=redis://redis:6379/0
 
 EXPOSE 8000
 
+# Development target (default)
+FROM base AS dev
 CMD ["uvicorn", "apps.api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+# Production target
+FROM base AS prod
+RUN pip install --no-cache-dir gunicorn
+CMD ["gunicorn", "apps.api.main:app", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000"]

@@ -6,6 +6,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from apps.api.core.config import get_settings
 from apps.api.routes import catalog, games, odds, predictions, admin, builder, signals
 
 
@@ -21,6 +22,7 @@ async def lifespan(app: FastAPI):
     signals_module._adjusted_store.extend(data["adjusted_predictions"])
     yield
 
+_settings = get_settings()
 
 app = FastAPI(
     title="SmartBets Pro API",
@@ -39,7 +41,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001"],
+    allow_origins=[o.strip() for o in _settings.cors_origins.split(",") if o.strip()],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

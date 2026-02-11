@@ -23,6 +23,9 @@ class Settings(BaseSettings):
     odds_api_key: str = ""
     stats_api_key: str = ""
 
+    # CORS
+    cors_origins: str = "http://localhost:3000,http://localhost:3001"
+
     # Model
     model_version: str = "v1.0"
     default_min_edge: float = 2.0
