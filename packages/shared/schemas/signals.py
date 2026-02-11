@@ -71,6 +71,7 @@ class NotificationRuleOut(BaseModel):
 
 class NotificationSentOut(BaseModel):
     """A notification that was sent."""
+    model_config = {"protected_namespaces": ()}
     id: int
     rule_id: int
     game_id: str

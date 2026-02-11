@@ -47,6 +47,7 @@ class MarketOutcome(BaseModel):
 
 class MarketDefinition(BaseModel):
     """Full definition of a market available in the catalog."""
+    model_config = {"protected_namespaces": ()}
     market_group: MarketGroup
     market_type: MarketType
     sport: Sport
@@ -82,6 +83,7 @@ class ExplanationFactor(BaseModel):
 
 class PredictionResult(BaseModel):
     """Prediction for one specific market outcome."""
+    model_config = {"protected_namespaces": ()}
     game_id: str
     market_spec: MarketSpec
     outcome: OutcomeType
@@ -97,6 +99,7 @@ class PredictionResult(BaseModel):
 
 class BestBet(BaseModel):
     """A value bet recommendation."""
+    model_config = {"protected_namespaces": ()}
     game_id: str
     sport: Sport
     league: League
@@ -162,6 +165,7 @@ class BacktestMetrics(BaseModel):
 
 class BacktestReport(BaseModel):
     """Full backtest report."""
+    model_config = {"protected_namespaces": ()}
     sport: Sport
     league: League
     market_group: MarketGroup
