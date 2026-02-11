@@ -1,10 +1,9 @@
 """Signals, notifications, and odds moves endpoints."""
 from __future__ import annotations
 
-from datetime import date, datetime
+from datetime import datetime
 
 from fastapi import APIRouter, Query
-from pydantic import BaseModel
 
 from packages.shared.enums.market import SignalType
 from packages.shared.schemas.signals import (

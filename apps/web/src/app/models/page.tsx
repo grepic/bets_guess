@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { fetchBacktestReport, fetchSports } from '@/lib/api';
+import { cn } from '@/lib/utils';
 import type { BacktestMetrics } from '@/types';
 
 const SPORT_OPTIONS = [
@@ -16,17 +17,15 @@ const MARKET_OPTIONS = [
   { value: 'totals', label: 'Totals O/U' },
   { value: 'soccer_1x2_ft', label: '1X2' },
   { value: 'soccer_corners_total', label: 'Corners' },
-  { value: 'soccer_cards_total', label: 'Cards' },
   { value: 'nba_totals', label: 'NBA Totals' },
-  { value: 'nba_player_points', label: 'NBA Player Points' },
   { value: 'nhl_totals', label: 'NHL Totals' },
   { value: 'tennis_winner', label: 'Tennis Winner' },
 ];
 
 function MetricsCard({ title, metrics }: { title: string; metrics: BacktestMetrics }) {
   return (
-    <div className="card p-4">
-      <h3 className="text-sm font-semibold text-gray-700 mb-3">{title}</h3>
+    <div className="card p-4 sm:p-5">
+      <h3 className="text-sm font-bold text-gray-700 mb-3">{title}</h3>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         <Stat label="Total Bets" value={String(metrics.total_bets)} />
         <Stat label="Win Rate" value={`${(metrics.win_rate * 100).toFixed(1)}%`} />
@@ -35,13 +34,11 @@ function MetricsCard({ title, metrics }: { title: string; metrics: BacktestMetri
           value={`${metrics.roi_pct >= 0 ? '+' : ''}${metrics.roi_pct.toFixed(1)}%`}
           color={metrics.roi_pct >= 0 ? 'text-green-600' : 'text-red-600'}
         />
-        <Stat label="Max Drawdown" value={`${metrics.max_drawdown.toFixed(1)} units`} />
+        <Stat label="Max Drawdown" value={`${metrics.max_drawdown.toFixed(1)}u`} />
         <Stat label="Avg Edge" value={`${metrics.avg_edge.toFixed(1)}%`} />
         {metrics.log_loss !== null && <Stat label="Log Loss" value={metrics.log_loss.toFixed(4)} />}
-        {metrics.brier_score !== null && <Stat label="Brier Score" value={metrics.brier_score.toFixed(4)} />}
-        {metrics.calibration_error !== null && (
-          <Stat label="Calibration Error" value={metrics.calibration_error.toFixed(4)} />
-        )}
+        {metrics.brier_score !== null && <Stat label="Brier" value={metrics.brier_score.toFixed(4)} />}
+        {metrics.calibration_error !== null && <Stat label="Cal. Error" value={metrics.calibration_error.toFixed(4)} />}
       </div>
     </div>
   );
@@ -49,9 +46,9 @@ function MetricsCard({ title, metrics }: { title: string; metrics: BacktestMetri
 
 function Stat({ label, value, color }: { label: string; value: string; color?: string }) {
   return (
-    <div>
-      <p className="text-xs text-gray-500">{label}</p>
-      <p className={`text-sm font-bold ${color || 'text-gray-900'}`}>{value}</p>
+    <div className="p-2.5 bg-gray-50 rounded-lg">
+      <p className="stat-label">{label}</p>
+      <p className={cn('stat-value', color)}>{value}</p>
     </div>
   );
 }
@@ -73,91 +70,86 @@ export default function ModelsPage() {
   const report = data?.report;
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold text-gray-900 mb-2">Model Performance</h1>
-      <p className="text-sm text-gray-500 mb-6">
-        Backtest results and calibration metrics. Past performance does not guarantee future results.
-      </p>
+    <div className="container-narrow animate-fade-in">
+      <div className="mb-6">
+        <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight">Model Performance</h1>
+        <p className="section-subtitle mt-1">
+          Backtest results and calibration metrics. Past performance does not guarantee future results.
+        </p>
+      </div>
 
-      {/* Sport/Market counts */}
+      {/* Sport cards */}
       {sportsData && (
-        <div className="grid grid-cols-4 gap-3 mb-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
           {sportsData.sports.map((s: any) => (
-            <div key={s.id} className="card p-3 text-center">
-              <p className="text-lg font-bold text-brand-700">{s.market_count}</p>
-              <p className="text-xs text-gray-500">{s.name} Markets</p>
+            <div
+              key={s.id}
+              className={cn(
+                'card-interactive p-3 sm:p-4 text-center',
+                sport === s.id && 'ring-2 ring-brand-500 border-brand-500',
+              )}
+              onClick={() => setSport(s.id)}
+            >
+              <p className="text-xl sm:text-2xl font-extrabold text-brand-700">{s.market_count}</p>
+              <p className="text-xs text-gray-500 font-medium mt-0.5">{s.name} Markets</p>
             </div>
           ))}
         </div>
       )}
 
       {/* Filters */}
-      <div className="flex gap-3 mb-6">
-        <select
-          value={sport}
-          onChange={(e) => setSport(e.target.value)}
-          className="px-3 py-1.5 text-sm border border-gray-300 rounded-md"
-        >
+      <div className="flex flex-col sm:flex-row gap-3 mb-6">
+        <select value={sport} onChange={(e) => setSport(e.target.value)} className="select sm:w-auto">
           {SPORT_OPTIONS.map((o) => (
-            <option key={o.value} value={o.value}>
-              {o.label}
-            </option>
+            <option key={o.value} value={o.value}>{o.label}</option>
           ))}
         </select>
-        <select
-          value={marketGroup}
-          onChange={(e) => setMarketGroup(e.target.value)}
-          className="px-3 py-1.5 text-sm border border-gray-300 rounded-md"
-        >
+        <select value={marketGroup} onChange={(e) => setMarketGroup(e.target.value)} className="select sm:w-auto">
           {MARKET_OPTIONS.map((o) => (
-            <option key={o.value} value={o.value}>
-              {o.label}
-            </option>
+            <option key={o.value} value={o.value}>{o.label}</option>
           ))}
         </select>
       </div>
 
       {isLoading && (
-        <div className="space-y-4">
-          <div className="skeleton h-40 rounded-lg" />
-          <div className="skeleton h-40 rounded-lg" />
+        <div className="space-y-4 animate-pulse">
+          <div className="h-40 bg-gray-100 rounded-xl" />
+          <div className="h-40 bg-gray-100 rounded-xl" />
         </div>
       )}
 
       {error && (
-        <div className="card p-6 text-center text-red-600 text-sm">
-          Failed to load backtest report. Is the API running?
+        <div className="card p-8 text-center">
+          <p className="text-red-600 text-sm font-semibold">Failed to load backtest report</p>
+          <p className="text-xs text-gray-500 mt-1">Make sure the backend is running on port 8000</p>
         </div>
       )}
 
       {report && (
         <>
-          {/* Disclaimer */}
-          <div className="bg-amber-50 border border-amber-200 rounded-lg px-4 py-2.5 mb-4">
+          <div className="bg-amber-50/80 border border-amber-200/80 rounded-xl px-4 py-2.5 mb-4">
             <p className="text-xs text-amber-800">
               <strong>Note:</strong> {data?.disclaimer}
             </p>
           </div>
 
-          {/* Report header */}
-          <div className="card p-4 mb-4">
-            <div className="grid grid-cols-3 gap-4 text-sm">
-              <div>
-                <p className="text-xs text-gray-500">Sport / League</p>
-                <p className="font-semibold">{report.sport} / {report.league}</p>
+          <div className="card p-4 sm:p-5 mb-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="p-2.5 bg-gray-50 rounded-lg">
+                <p className="stat-label">Sport / League</p>
+                <p className="stat-value">{report.sport} / {report.league}</p>
               </div>
-              <div>
-                <p className="text-xs text-gray-500">Market Group</p>
-                <p className="font-semibold">{report.market_group}</p>
+              <div className="p-2.5 bg-gray-50 rounded-lg">
+                <p className="stat-label">Market Group</p>
+                <p className="stat-value">{report.market_group.replace(/_/g, ' ')}</p>
               </div>
-              <div>
-                <p className="text-xs text-gray-500">Sample Size</p>
-                <p className="font-semibold">{report.sample_size} bets</p>
+              <div className="p-2.5 bg-gray-50 rounded-lg">
+                <p className="stat-label">Sample Size</p>
+                <p className="stat-value">{report.sample_size} bets</p>
               </div>
             </div>
           </div>
 
-          {/* Flat Stake */}
           <div className="space-y-4">
             <MetricsCard title="Flat Stake (1 unit)" metrics={report.flat_stake} />
             {report.kelly_stake && (
@@ -165,11 +157,8 @@ export default function ModelsPage() {
             )}
           </div>
 
-          {/* Notes */}
           {report.notes && (
-            <div className="mt-4 text-xs text-gray-500 italic">
-              {report.notes}
-            </div>
+            <p className="mt-4 text-xs text-gray-500 italic">{report.notes}</p>
           )}
         </>
       )}

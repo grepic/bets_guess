@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { cn, sportIcon, sportLabel } from '@/lib/utils';
 import type { FilterState, Sport } from '@/types';
 
@@ -12,41 +13,24 @@ const MARKET_GROUPS: Record<string, { label: string; sport?: string }[]> = {
     { label: 'Totals (Goals)', sport: 'totals' },
     { label: 'BTTS', sport: 'soccer_btts' },
     { label: 'Corners Total', sport: 'soccer_corners_total' },
-    { label: 'Corners Team', sport: 'soccer_corners_team' },
     { label: 'Cards Total', sport: 'soccer_cards_total' },
-    { label: 'SOT Total', sport: 'soccer_sot_total' },
-    { label: 'Shots Total', sport: 'soccer_shots_total' },
     { label: 'Correct Score', sport: 'soccer_correct_score' },
-    { label: 'Clean Sheet', sport: 'soccer_clean_sheet' },
-    { label: 'Player SOT', sport: 'soccer_sot_player' },
-    { label: 'Anytime Scorer', sport: 'soccer_anytime_scorer' },
   ],
   nba: [
     { label: 'Moneyline', sport: 'nba_moneyline' },
     { label: 'Spread', sport: 'nba_spread' },
     { label: 'Totals', sport: 'nba_totals' },
     { label: 'Team Totals', sport: 'nba_team_totals' },
-    { label: 'Player Points', sport: 'nba_player_points' },
-    { label: 'Player Rebounds', sport: 'nba_player_rebounds' },
-    { label: 'Player Assists', sport: 'nba_player_assists' },
-    { label: 'Player Threes', sport: 'nba_player_threes' },
-    { label: 'Player PRA', sport: 'nba_player_pra' },
   ],
   nhl: [
     { label: 'Moneyline', sport: 'nhl_moneyline' },
     { label: 'Puck Line', sport: 'nhl_puck_line' },
     { label: 'Totals', sport: 'nhl_totals' },
-    { label: 'Team Totals', sport: 'nhl_team_totals' },
-    { label: 'Reg Time 3-Way', sport: 'nhl_reg_time' },
-    { label: 'Player SOG', sport: 'nhl_player_sog' },
-    { label: 'Goalie Saves', sport: 'nhl_goalie_saves' },
   ],
   tennis: [
     { label: 'Match Winner', sport: 'tennis_winner' },
-    { label: 'Set Betting', sport: 'tennis_set_betting' },
     { label: 'Total Games', sport: 'tennis_total_games' },
-    { label: 'Set Totals', sport: 'tennis_set_totals' },
-    { label: 'Tiebreak', sport: 'tennis_tiebreak' },
+    { label: 'Set Betting', sport: 'tennis_set_betting' },
   ],
 };
 
@@ -56,32 +40,33 @@ interface Props {
 }
 
 export function FilterBlock({ filters, onChange }: Props) {
+  const [collapsed, setCollapsed] = useState(true);
   const sportMarkets = MARKET_GROUPS[filters.sport] || [];
 
-  return (
-    <div className="card p-4 space-y-4">
-      <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Filters</h3>
-
+  const content = (
+    <div className="space-y-4">
       {/* Date */}
       <div>
-        <label className="block text-xs font-medium text-gray-500 mb-1">Date</label>
+        <label className="stat-label mb-1.5 block">Date</label>
         <input
           type="date"
           value={filters.date}
           onChange={(e) => onChange({ ...filters, date: e.target.value })}
-          className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:ring-brand-500 focus:border-brand-500"
+          className="input"
         />
       </div>
 
       {/* Sport */}
       <div>
-        <label className="block text-xs font-medium text-gray-500 mb-1">Sport</label>
-        <div className="grid grid-cols-2 gap-1.5">
+        <label className="stat-label mb-1.5 block">Sport</label>
+        <div className="grid grid-cols-3 lg:grid-cols-2 gap-1.5">
           <button
             onClick={() => onChange({ ...filters, sport: '', marketGroup: '' })}
             className={cn(
-              'px-2 py-1.5 text-xs font-medium rounded-md border transition-colors',
-              filters.sport === '' ? 'bg-brand-600 text-white border-brand-600' : 'border-gray-300 hover:bg-gray-50',
+              'px-2 py-2 text-xs font-semibold rounded-lg border transition-all duration-150',
+              filters.sport === ''
+                ? 'bg-brand-600 text-white border-brand-600 shadow-sm'
+                : 'border-gray-200 text-gray-600 hover:border-gray-300 hover:bg-gray-50',
             )}
           >
             All
@@ -91,8 +76,10 @@ export function FilterBlock({ filters, onChange }: Props) {
               key={s}
               onClick={() => onChange({ ...filters, sport: s, marketGroup: '' })}
               className={cn(
-                'px-2 py-1.5 text-xs font-medium rounded-md border transition-colors',
-                filters.sport === s ? 'bg-brand-600 text-white border-brand-600' : 'border-gray-300 hover:bg-gray-50',
+                'px-2 py-2 text-xs font-semibold rounded-lg border transition-all duration-150',
+                filters.sport === s
+                  ? 'bg-brand-600 text-white border-brand-600 shadow-sm'
+                  : 'border-gray-200 text-gray-600 hover:border-gray-300 hover:bg-gray-50',
               )}
             >
               {sportIcon(s)} {sportLabel(s)}
@@ -104,17 +91,15 @@ export function FilterBlock({ filters, onChange }: Props) {
       {/* Market Group */}
       {filters.sport && sportMarkets.length > 0 && (
         <div>
-          <label className="block text-xs font-medium text-gray-500 mb-1">Market</label>
+          <label className="stat-label mb-1.5 block">Market</label>
           <select
             value={filters.marketGroup}
             onChange={(e) => onChange({ ...filters, marketGroup: e.target.value })}
-            className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md"
+            className="select"
           >
             <option value="">All Markets</option>
             {sportMarkets.map((m) => (
-              <option key={m.sport} value={m.sport}>
-                {m.label}
-              </option>
+              <option key={m.sport} value={m.sport}>{m.label}</option>
             ))}
           </select>
         </div>
@@ -122,8 +107,9 @@ export function FilterBlock({ filters, onChange }: Props) {
 
       {/* Min Edge */}
       <div>
-        <label className="block text-xs font-medium text-gray-500 mb-1">
-          Min Edge: {filters.minEdge}%
+        <label className="stat-label mb-1.5 flex items-center justify-between">
+          <span>Min Edge</span>
+          <span className="text-brand-600 font-bold">{filters.minEdge}%</span>
         </label>
         <input
           type="range"
@@ -132,14 +118,15 @@ export function FilterBlock({ filters, onChange }: Props) {
           step={0.5}
           value={filters.minEdge}
           onChange={(e) => onChange({ ...filters, minEdge: Number(e.target.value) })}
-          className="w-full accent-brand-600"
+          className="w-full accent-brand-600 h-1.5"
         />
       </div>
 
       {/* Min Probability */}
       <div>
-        <label className="block text-xs font-medium text-gray-500 mb-1">
-          Min Prob: {(filters.minProb * 100).toFixed(0)}%
+        <label className="stat-label mb-1.5 flex items-center justify-between">
+          <span>Min Probability</span>
+          <span className="text-brand-600 font-bold">{(filters.minProb * 100).toFixed(0)}%</span>
         </label>
         <input
           type="range"
@@ -148,20 +135,53 @@ export function FilterBlock({ filters, onChange }: Props) {
           step={0.05}
           value={filters.minProb}
           onChange={(e) => onChange({ ...filters, minProb: Number(e.target.value) })}
-          className="w-full accent-brand-600"
+          className="w-full accent-brand-600 h-1.5"
         />
       </div>
 
       {/* Hide no odds */}
-      <label className="flex items-center gap-2 text-xs text-gray-600 cursor-pointer">
+      <label className="flex items-center gap-2.5 text-xs text-gray-600 cursor-pointer group">
         <input
           type="checkbox"
           checked={filters.hideNoOdds}
           onChange={(e) => onChange({ ...filters, hideNoOdds: e.target.checked })}
-          className="rounded border-gray-300 text-brand-600 focus:ring-brand-500"
+          className="w-4 h-4 rounded border-gray-300 text-brand-600 focus:ring-brand-500 transition"
         />
-        Hide bets without odds
+        <span className="group-hover:text-gray-900 transition-colors">Hide bets without odds</span>
       </label>
     </div>
+  );
+
+  return (
+    <>
+      {/* Desktop: always visible sidebar */}
+      <div className="hidden lg:block">
+        <div className="card p-4 sticky top-20">
+          <h3 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Filters</h3>
+          {content}
+        </div>
+      </div>
+
+      {/* Mobile: collapsible */}
+      <div className="lg:hidden">
+        <button
+          onClick={() => setCollapsed(!collapsed)}
+          className="w-full card p-3 flex items-center justify-between"
+        >
+          <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">Filters</span>
+          <svg
+            className={cn('w-4 h-4 text-gray-400 transition-transform', !collapsed && 'rotate-180')}
+            fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        {!collapsed && (
+          <div className="card p-4 mt-2 animate-slide-down">
+            {content}
+          </div>
+        )}
+      </div>
+    </>
   );
 }
